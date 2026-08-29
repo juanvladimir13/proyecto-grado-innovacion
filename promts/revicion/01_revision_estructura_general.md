@@ -26,7 +26,7 @@ Al iniciar el proceso de revisión, con el índice general o el árbol de capít
 | :--- | :--- |
 | Entrada principal | `main.tex` |
 | Ensamble de capítulos | `capitulos/index.tex` |
-| Preliminares | `preliminares/caratula.tex`, `preliminares/portada_universitaria.tex`, `preliminares/dedicatoria.tex`, `preliminares/agradecimiento.tex`, `preliminares/resumen.tex` |
+| Preliminares | `preliminares/caratula.tex`, `preliminares/dedicatoria.tex`, `preliminares/agradecimiento.tex`, `preliminares/resumen.tex` |
 | Cap. 1 | `capitulos/01_introduccion/main.tex` → `contexto_general.tex`, `motivacion_pertinencia.tex`, `contribucion_esperada.tex` |
 | Cap. 2 | `capitulos/02_planteamiento_problema/main.tex` → `diagnostico.tex`, `identificacion_problema.tex`, `formulacion_problema.tex`, `objetivos.tex`, `justificacion.tex` |
 | Cap. 3 | `capitulos/03_marco_referencial/main.tex` → `antecedentes.tex`, `bases_teoricas.tex`, `marco_conceptual.tex` |

@@ -19,8 +19,7 @@ proyecto-grado-innovacion/
 │   ├── estilos.sty                         # Archivo de estilos (márgenes, fuentes, espaciados y paquetes)
 │   └── configuracion.tex                   # Metadatos centralizados (título, autor(es), tutor, institución, modalidad)
 ├── preliminares/                           # Hojas preliminares con numeración romana
-│   ├── caratula.tex                        # Carátula formal BTH (\titulocaratula, \subtitulocaratula)
-│   ├── portada_universitaria.tex           # Portada alternativa estilo universitario
+│   ├── caratula.tex                        # Portada oficial BTH consolidada (marco perimetral azul opcional y macros semánticas)
 │   ├── agradecimiento.tex                  # Página de agradecimientos (\capitulopreliminar y \begin{estilodedicatoria})
 │   ├── dedicatoria.tex                     # Página de dedicatoria (\capitulopreliminar y \begin{estilodedicatoria})
 │   └── resumen.tex                         # Resumen (\capitulopreliminar, \palabrasclave, \keywords, \simikuna)
@@ -57,7 +56,9 @@ proyecto-grado-innovacion/
 ├── imagenes/                               # Repositorio de recursos gráficos e ilustraciones
 │   ├── README.md                           # Guía detallada para figuras e imágenes según APA 7
 │   ├── figura_ejemplo.tex                  # Plantilla modular de figura bajo APA 7
-│   └── diagrama_proceso_ejemplo.png        # Diagrama de flujo de alta resolución (300 DPI)
+│   ├── diagrama_proceso_ejemplo.png        # Diagrama de flujo de alta resolución (300 DPI)
+│   ├── marco_portada_bth.png               # Marco decorativo perimetral azul de la portada BTH
+│   └── logo_bth.png                        # Logotipo institucional oficial del Módulo San Julián
 ├── bibliografia/                           # Base de datos bibliográfica (APA 7ma Edición)
 │   └── referencias.bib                     # Archivo BibLaTeX (.bib) con fuentes de citas en APA 7
 ├── anexos/                                 # Apéndices e información complementaria
@@ -75,7 +76,9 @@ proyecto-grado-innovacion/
 │       └── 01_ a 13_*.md                   # Prompts de revisión modular (9 capítulos) y checklist pre-defensa
 └── docs/                                   # Regulaciones oficiales y documentos de soporte
     ├── REGLAMENTO_BTH__RM_0912_2023.pdf    # Reglamento oficial de graduación BTH (RM 0912/2023)
-    └── ficha-proyecto.md                   # Ficha de datos y requerimientos del proyecto
+    ├── ficha-proyecto.md                   # Ficha de datos y requerimientos del proyecto
+    ├── proyecto.md                         # Documento base de texto/notas brutas del proyecto real
+    └── proyecto.rtf                        # Documento base en formato RTF del proyecto real
 ```
 
 ---

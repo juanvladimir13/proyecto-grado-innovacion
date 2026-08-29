@@ -10,8 +10,8 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
 ## 🎯 Resumen de Reglas Críticas para Antigravity
 
 1. **Variables Centralizadas:**
-   - **NUNCA** quemes nombres de autores, tutores, institución, especialidad o título en archivos `.tex` (`caratula.tex`, `portada_universitaria.tex` o capítulos).
-   - Toda modificación de metadatos, espaciado de párrafos (`\espacioposteriorparrafo`, `\sangriaprimeralinea`) y diagramación (`\espaciosuperiordedicatoria`) se realiza en [estilos/configuracion.tex](estilos/configuracion.tex). Soporta 1 o 2 autores dinámicamente (`\autoruno`, `\autordos`).
+   - **NUNCA** quemes nombres de autores, tutores, institución, especialidad o título en archivos `.tex` (`caratula.tex` o capítulos).
+   - Toda modificación de metadatos, espaciado de párrafos (`\espacioposteriorparrafo`, `\sangriaprimeralinea`), diagramación (`\espaciosuperiordedicatoria`), figuras (`\anchuraimagenpredeterminada`, `\estilorotuloapa`) y portada (`\activarmarcobth`, `\rutamarcobth`, `\rutalogobth`, `\formulagradobth`) se realiza en [estilos/configuracion.tex](estilos/configuracion.tex). Soporta 1 o 2 autores dinámicamente (`\autoruno`, `\autordos`).
    - Los campos de C.I. del estudiante fueron removidos y no forman parte de la plantilla.
 
 2. **Estructura Modular de Capítulos (Innovación Tecnológica):**
@@ -71,7 +71,7 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
     - Ficha de datos del proyecto en [docs/ficha-proyecto.md](docs/ficha-proyecto.md) (alimentada desde `docs/proyecto.rtf` o `docs/proyecto.md` y consultas interactivas).
     - Preliminares: [agradecimiento.tex](preliminares/agradecimiento.tex) y [dedicatoria.tex](preliminares/dedicatoria.tex) utilizan `\capitulopreliminar` y el entorno global `\begin{estilodedicatoria}` (con espaciado superior configurable `\espaciosuperiordedicatoria`).
     - Resúmenes en [preliminares/resumen.tex](preliminares/resumen.tex) formatean palabras clave con `\palabrasclave{...}`, `\keywords{...}` y `\simikuna{...}`.
-    - Carátula oficial formateada con `\titulocaratula{...}` y `\subtitulocaratula{...}`.
+    - Portada oficial BTH consolidada en [preliminares/caratula.tex](preliminares/caratula.tex) con marco decorativo perimetral azul gobernado por `\activarmarcobth`.
 
 11. **Prompts de Apoyo (`promts/`):**
     - Guiar la redacción con [promts/migracion/ficha-proyecto.md](promts/migracion/ficha-proyecto.md).
@@ -98,9 +98,9 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
       * `\notatabla{...}`: Notas al pie de tablas bajo APA 7.
       * `\notafigura{...}`: Notas al pie de figuras bajo APA 7 (espaciado `\espacionotafigura`).
       * `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`: Macro de alto nivel para figuras e imágenes según APA 7.
-      * `\titulocaratula{...}` y `\subtitulocaratula{...}`: Formato tipográfico en carátula.
       * `\insertarmarcobth`: Inserción del marco perimetral azul en segundo plano de la portada BTH.
-      * `\institucionportadabth`, `\especialidadportadabth`, `\tituloportadabth`, `\formulagradoportadabth`, `\etiquetapostulantesbth`, `\etiquetatutorbth`, `\tutorportadabth`, `\pieportadabth`: Macros semánticas de la Portada BTH.
+      * `\institucionportadabth`, `\especialidadportadabth`, `\tituloportadabth`, `\formulagradoportadabth`, `\etiquetapostulantesbth`, `\etiquetatutorbth`, `\tutorportadabth`, `\pieportadabth`: Macros semánticas de la Portada Oficial BTH consolidada en `caratula.tex`.
+      * `\titulocaratula{...}` y `\subtitulocaratula{...}`: Macros de compatibilidad tipográfica.
 
 15. **Metodología de la Investigación Aplicada (I+D Tecnológica):**
     - Identificar explícitamente la **Variable Independiente (VI)** (la solución tecnológica en Cap. 4) y las **Variables Dependientes (VD)** (efectos medidos: eficiencia, tiempos, costos, precisión en Cap. 5 y 7).

@@ -46,10 +46,7 @@ proyecto-grado-innovacion/
 │   ├── estilos.sty                         # Estilos, carga de paquetes (biblatex-apa, listings), títulos APA 7
 │   └── configuracion.tex                   # Variables centralizadas de autor(es), título, tutor, institución y modalidad
 ├── preliminares/                           # Hojas frontales (numeración romana)
-│   ├── caratula.tex                        # Carátula principal (enlaza por defecto a portada_bth.tex)
-│   ├── portada_bth.tex                     # Portada oficial BTH (con marco azul, escudo San Julián y macros globales)
-│   ├── caratula_ministerial.tex            # Carátula ministerial alternativa sobria (RM 0912/2023)
-│   ├── portada_universitaria.tex           # Portada alternativa estilo académico/universitario
+│   ├── caratula.tex                        # Portada oficial BTH consolidada (marco perimetral azul opcional y macros semánticas)
 │   ├── agradecimiento.tex                  # Agradecimientos (\capitulopreliminar y \begin{estilodedicatoria})
 │   ├── dedicatoria.tex                     # Dedicatorias (\capitulopreliminar y \begin{estilodedicatoria})
 │   └── resumen.tex                         # Resúmenes (\capitulopreliminar, \palabrasclave, \keywords, \simikuna)
@@ -88,7 +85,7 @@ proyecto-grado-innovacion/
 │   ├── figura_ejemplo.tex                  # Plantilla modular de figura bajo APA 7
 │   ├── diagrama_proceso_ejemplo.png        # Diagrama de flujo técnico en alta resolución (300 DPI)
 │   ├── marco_portada_bth.png               # Marco decorativo perimetral azul de la portada BTH
-│   └── logo_bth_transparente.png           # Logotipo institucional oficial del Módulo San Julián
+│   └── logo_bth.png                        # Logotipo institucional oficial del Módulo San Julián
 ├── bibliografia/                           # Bibliografía BibLaTeX (APA 7ma Edición)
 │   └── referencias.bib                     # Base de datos de referencias (.bib) formateada en APA 7
 ├── anexos/                                 # Apéndices del documento
@@ -119,7 +116,9 @@ proyecto-grado-innovacion/
 │       └── 13_checklist_pre_entrega_final.md # Checklist institucional BTH pre-defensa
 └── docs/                                   # Regulaciones oficiales y guías
     ├── REGLAMENTO_BTH__RM_0912_2023.pdf    # Reglamento Ministerial oficial RM 0912/2023
-    └── ficha-proyecto.md                   # Ficha de datos y requerimientos del proyecto
+    ├── ficha-proyecto.md                   # Ficha de datos y requerimientos del proyecto
+    ├── proyecto.md                         # Documento base de texto/notas brutas del proyecto real
+    └── proyecto.rtf                        # Documento base en formato RTF del proyecto real
 ```
 
 ---
@@ -127,8 +126,8 @@ proyecto-grado-innovacion/
 ## 🎯 Reglas Críticas para la IA
 
 ### 1. Modificaciones de Datos Personales o Institucionales
-* **REGLA:** **NUNCA** quemes (hardcodees) nombres de estudiantes, tutores, instituciones o títulos del proyecto directamente en los archivos `.tex` como `caratula.tex`, `portada_universitaria.tex` o capítulos.
-* **ACCIÓN:** Utiliza o actualiza las macros correspondientes en `estilos/configuracion.tex` (`\institucion`, `\modalidad`, `\especialidad`, `\autoruno`, `\autordos`, `\tutorproyecto`, `\espacioposteriorparrafo`, `\sangriaprimeralinea`, `\espaciosuperiordedicatoria`, etc.).
+* **REGLA:** **NUNCA** quemes (hardcodees) nombres de estudiantes, tutores, instituciones o títulos del proyecto directamente en los archivos `.tex` como `caratula.tex` o capítulos.
+* **ACCIÓN:** Utiliza o actualiza las macros correspondientes en `estilos/configuracion.tex` (`\institucion`, `\modalidad`, `\especialidad`, `\tituloproyecto`, `\autoruno`, `\autordos`, `\tutorproyecto`, `\lugarproyecto`, `\gestionproyecto`, `\espacioposteriorparrafo`, `\sangriaprimeralinea`, `\espaciosuperiordedicatoria`, `\anchuraimagenpredeterminada`, `\activarmarcobth`, `\formulagradobth`, etc.).
 * **Campos C.I.:** El número de C.I. del estudiante no forma parte de la plantilla y fue removido de las macros y de la carátula oficial.
 
 ### 2. Estructuración Modular de Capítulos
@@ -170,6 +169,7 @@ proyecto-grado-innovacion/
 * **Imágenes y Figuras (Normas APA 7ma Edición):** Guardar en `imagenes/` (.png, .jpg, .pdf) e incluirlas sin prefijo de ruta (ya configurado en `estilos.sty`).
   - **Estructura APA 7:** Título y rótulo obligatoriamente **arriba** de la imagen (`\caption{...}\label{fig:...}`), contenido gráfico centrado (`\centering`), y notas explicativas o fuentes **abajo** con la macro semántica `\notafigura{Fuente: ...}` (espaciado `\espacionotafigura`).
   - **Dimensiones:** Ancho estándar gobernado centralmente por `\anchuraimagenpredeterminada` (en `estilos/configuracion.tex`, por defecto `0.8\textwidth`).
+  - **Estilo de Rótulo:** Configurable globalmente mediante `\estilorotuloapa` en `estilos/configuracion.tex` (`estricto` para 2 líneas bajo APA 7 oficial o `enlinea` para formato adaptado compacto en 1 sola línea).
   - **Formas de Inclusión:** Entorno clásico `\begin{figure}[htbp]`, macro semántica `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`, o subfiguras con `subcaption` (guía en `imagenes/README.md` y plantilla `imagenes/figura_ejemplo.tex`).
 
 ### 7. Inserción de Código Fuente y Algoritmos
@@ -222,9 +222,9 @@ Este proyecto está configurado para la modalidad de **Innovación Tecnológica*
   - `\notatabla{...}`: Formato estandarizado para notas y fuentes al pie de tablas bajo APA 7ma Edición.
   - `\notafigura{...}`: Formato estandarizado para notas y fuentes al pie de figuras e ilustraciones bajo APA 7ma Edición (espaciado `\espacionotafigura`).
   - `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`: Macro de alto nivel para inserción estandarizada de ilustraciones con estructura APA 7.
-  - `\titulocaratula{...}` y `\subtitulocaratula{...}`: Formato tipográfico y paleta institucional en la portada oficial.
   - `\insertarmarcobth`: Inserción en background del marco perimetral azul ornamentado en la carátula BTH (gobernado por `\activarmarcobth`).
-  - `\institucionportadabth{...}`, `\especialidadportadabth{...}`, `\tituloportadabth{...}`, `\formulagradoportadabth{...}`, `\etiquetapostulantesbth{...}`, `\etiquetatutorbth{...}`, `\tutorportadabth{...}`, `\pieportadabth{...}{...}`: Macros semánticas de formato para los bloques de la Portada BTH.
+  - `\institucionportadabth{...}`, `\especialidadportadabth{...}`, `\tituloportadabth{...}`, `\formulagradoportadabth{...}`, `\etiquetapostulantesbth{...}`, `\etiquetatutorbth{...}`, `\tutorportadabth{...}`, `\pieportadabth{...}{...}`: Macros semánticas de diagramación y tipografía para los bloques de la Portada Oficial BTH consolidada en `preliminares/caratula.tex`.
+  - `\titulocaratula{...}` y `\subtitulocaratula{...}`: Macros de compatibilidad tipográfica institucional.
 
 ### 14. Metodología de la Investigación Aplicada (I+D Tecnológica)
 * **REGLA:** El proyecto se estructura bajo el paradigma de **Investigación Aplicada y Desarrollo Tecnológico (I+D)** con diseño pre-experimental (diagnóstico $\rightarrow$ diseño $\rightarrow$ validación empírica $\rightarrow$ contraste antes vs. después):
