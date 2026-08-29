@@ -38,7 +38,7 @@ Al iniciar el proceso de revisión, con el índice general o el árbol de capít
 | Cap. 9 | `capitulos/09_conclusiones_recomendaciones/main.tex` → `conclusiones.tex`, `recomendaciones.tex` |
 | Bibliografía | `bibliografia/referencias.bib` |
 | Anexos | `anexos/index.tex` → `anexo_a_canvas.tex`, `anexo_b_fichas_tecnicas.tex`, `anexo_c_codigo_fuente.tex` |
-| Configuración | `estilos/configuracion.tex`, `estilos/estilos.sty` |
+| Configuración y estilos | `estilos/configuracion.tex`, `estilos/estilos.sty`, `estilos/caratula.sty` |
 
 ---
 

@@ -89,7 +89,7 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
     - Reservar `\begin{enumerate}` exclusivamente para secuencias algorítmicas estrictas, cronologías o pasos procedimentales secuenciales donde la numeración sea indispensable.
 
 14. **Macros Semánticas Estandarizadas de la Plantilla:**
-    - Utilizar obligatoriamente las macros semánticas provistas en `estilos.sty`:
+    - Utilizar obligatoriamente las macros semánticas provistas en `estilos.sty` y `estilos/caratula.sty`:
       * `\capitulopreliminar{Título}`: Capítulos preliminares y Anexos sin numerar con título superior agregados a TOC (`Resumen`, `ANEXOS`).
       * `\begin{estilodedicatoria}{Título}...\end{estilodedicatoria}`: Entorno semántico para dedicatoria y agradecimiento al pie en una sola hoja sin separación entre título y texto.
       * `\seccionanexo{Título}`: Encabezados de secciones de anexos agregados a TOC.

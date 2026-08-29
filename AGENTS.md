@@ -214,7 +214,7 @@ Este proyecto está configurado para la modalidad de **Innovación Tecnológica*
   - Reservar el entorno de lista numerada (`enumerate`) **exclusivamente** para secuencias algorítmicas estrictas, pasos procedimentales ordenados o cronologías donde la numeración correlativa sea indispensable e inherente a la explicación técnica.
 
 ### 13. Macros Semánticas Estandarizadas de la Plantilla
-* **REGLA:** Utilizar obligatoriamente las macros semánticas provistas en `estilos.sty` para preservar la coherencia y mantenibilidad del documento:
+* **REGLA:** Utilizar obligatoriamente las macros semánticas provistas en `estilos.sty` y `estilos/caratula.sty` para preservar la coherencia y mantenibilidad del documento:
   - `\capitulopreliminar{Título}`: Capítulos preliminares no numerados con título superior y entrada automática al TOC (`Resumen`, `ANEXOS`), en sustitución de `\chapter*{...}\addcontentsline{...}` manual.
   - `\begin{estilodedicatoria}{Título}...\end{estilodedicatoria}`: Entorno semántico para dedicatoria y agradecimiento (ubica el título y contenido en una misma hoja alineados a la parte inferior sin separación excesiva entre ellos, con alineación derecha, cursiva y registro automático en el TOC).
   - `\seccionanexo{Título}`: Encabezados de secciones de anexos con inclusión automática en el TOC (`\seccionanexo{Anexo A: Modelo Canvas...}`).

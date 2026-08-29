@@ -27,7 +27,7 @@ Como última verificación previa a la impresión o entrega formal del documento
 | Componente | Archivo(s) |
 | :--- | :--- |
 | Entrada principal | `main.tex` |
-| Configuración | `estilos/configuracion.tex`, `estilos/estilos.sty` |
+| Configuración y estilos | `estilos/configuracion.tex`, `estilos/estilos.sty`, `estilos/caratula.sty` |
 | Preliminares | `preliminares/caratula.tex`, `preliminares/dedicatoria.tex`, `preliminares/agradecimiento.tex`, `preliminares/resumen.tex` |
 | Capítulos 1-9 | `capitulos/index.tex` → 9 carpetas con `main.tex` y secciones `.tex` |
 | Tablas | `tablas/*.tex` (especificaciones, cronograma, costos, plan mejora, comparación, etc.) |
