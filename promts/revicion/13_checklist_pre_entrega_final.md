@@ -56,7 +56,7 @@ Actúa como el **presidente de tribunal de titulación del Bachillerato Técnico
 1. **Hojas preliminares (numeración romana minúscula):**
    - [ ] Carátula oficial BTH con logos institucionales, tipografía normalizada (`\titulocaratula`, `\subtitulocaratula`), datos del autor/autores (sin campos de C.I.), tutor, UE, subsistema y año de gestión.
    - [ ] Portada académica interior.
-   - [ ] Dedicatoria y Agradecimiento con formato semántico unificado (`\capitulopreliminar` y entorno `\begin{estilodedicatoria}` con espaciado `\espaciosuperiordedicatoria`).
+   - [ ] Dedicatoria y Agradecimiento con formato semántico unificado (`\begin{estilodedicatoria}{Título}` alineados a la parte inferior en una misma hoja sin separación entre título y texto).
    - [ ] Resumen en castellano (máx. 300 palabras), con `\palabrasclave{...}`.
    - [ ] Resumen en lengua originaria (quechua, aymara o guaraní según contexto regional), con `\simikuna{...}`.
    - [ ] Abstract en lengua extranjera (inglés), con `\keywords{...}`.

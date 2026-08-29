@@ -69,7 +69,7 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
     - Ensamble raíz en [main.tex](main.tex) vía `\input{capitulos/index.tex}`.
     - Metadatos institucionales y del estudiante centralizados en [estilos/configuracion.tex](estilos/configuracion.tex).
     - Ficha de datos del proyecto en [docs/ficha-proyecto.md](docs/ficha-proyecto.md) (alimentada desde `docs/proyecto.rtf` o `docs/proyecto.md` y consultas interactivas).
-    - Preliminares: [agradecimiento.tex](preliminares/agradecimiento.tex) y [dedicatoria.tex](preliminares/dedicatoria.tex) utilizan `\capitulopreliminar` y el entorno global `\begin{estilodedicatoria}` (con espaciado superior configurable `\espaciosuperiordedicatoria`).
+    - Preliminares: [agradecimiento.tex](preliminares/agradecimiento.tex) y [dedicatoria.tex](preliminares/dedicatoria.tex) utilizan el entorno `\begin{estilodedicatoria}{Título}` (alineado a la parte inferior en una misma hoja, sin separación entre título y contenido, con registro automático en el TOC).
     - Resúmenes en [preliminares/resumen.tex](preliminares/resumen.tex) formatean palabras clave con `\palabrasclave{...}`, `\keywords{...}` y `\simikuna{...}`.
     - Portada oficial BTH consolidada en [preliminares/caratula.tex](preliminares/caratula.tex) con marco decorativo perimetral azul gobernado por `\activarmarcobth`.
 
@@ -90,8 +90,8 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
 
 14. **Macros Semánticas Estandarizadas de la Plantilla:**
     - Utilizar obligatoriamente las macros semánticas provistas en `estilos.sty`:
-      * `\capitulopreliminar{Título}`: Capítulos preliminares y Anexos sin numerar agregados a TOC.
-      * `\begin{estilodedicatoria}...\end{estilodedicatoria}`: Entorno semántico para dedicatoria y agradecimiento.
+      * `\capitulopreliminar{Título}`: Capítulos preliminares y Anexos sin numerar con título superior agregados a TOC (`Resumen`, `ANEXOS`).
+      * `\begin{estilodedicatoria}{Título}...\end{estilodedicatoria}`: Entorno semántico para dedicatoria y agradecimiento al pie en una sola hoja sin separación entre título y texto.
       * `\seccionanexo{Título}`: Encabezados de secciones de anexos agregados a TOC.
       * `\configurarseccionfinal`: Estilo de página limpio (`empty`) para bibliografía y anexos.
       * `\palabrasclave{...}`, `\keywords{...}`, `\simikuna{...}`: Bloques semánticos de palabras clave.

@@ -47,8 +47,8 @@ proyecto-grado-innovacion/
 │   └── configuracion.tex                   # Variables centralizadas de autor(es), título, tutor, institución y modalidad
 ├── preliminares/                           # Hojas frontales (numeración romana)
 │   ├── caratula.tex                        # Portada oficial BTH consolidada (marco perimetral azul opcional y macros semánticas)
-│   ├── agradecimiento.tex                  # Agradecimientos (\capitulopreliminar y \begin{estilodedicatoria})
-│   ├── dedicatoria.tex                     # Dedicatorias (\capitulopreliminar y \begin{estilodedicatoria})
+│   ├── agradecimiento.tex                  # Agradecimientos (\begin{estilodedicatoria}{Agradecimiento})
+│   ├── dedicatoria.tex                     # Dedicatorias (\begin{estilodedicatoria}{Dedicatoria})
 │   └── resumen.tex                         # Resúmenes (\capitulopreliminar, \palabrasclave, \keywords, \simikuna)
 ├── capitulos/                              # Modalidad: Innovación Tecnológica (Capítulos 1 al 9)
 │   ├── index.tex                           # Ensamble de los 9 capítulos
@@ -214,8 +214,8 @@ Este proyecto está configurado para la modalidad de **Innovación Tecnológica*
 
 ### 13. Macros Semánticas Estandarizadas de la Plantilla
 * **REGLA:** Utilizar obligatoriamente las macros semánticas provistas en `estilos.sty` para preservar la coherencia y mantenibilidad del documento:
-  - `\capitulopreliminar{Título}`: Capítulos preliminares no numerados con entrada automática al TOC (`Agradecimiento`, `Dedicatoria`, `Resumen`, `ANEXOS`), en sustitución de `\chapter*{...}\addcontentsline{...}` manual.
-  - `\begin{estilodedicatoria}...\end{estilodedicatoria}`: Entorno semántico para dedicatoria y agradecimiento (alineación derecha, cursiva y espaciado vertical configurable vía `\espaciosuperiordedicatoria` en `estilos/configuracion.tex`).
+  - `\capitulopreliminar{Título}`: Capítulos preliminares no numerados con título superior y entrada automática al TOC (`Resumen`, `ANEXOS`), en sustitución de `\chapter*{...}\addcontentsline{...}` manual.
+  - `\begin{estilodedicatoria}{Título}...\end{estilodedicatoria}`: Entorno semántico para dedicatoria y agradecimiento (ubica el título y contenido en una misma hoja alineados a la parte inferior sin separación excesiva entre ellos, con alineación derecha, cursiva y registro automático en el TOC).
   - `\seccionanexo{Título}`: Encabezados de secciones de anexos con inclusión automática en el TOC (`\seccionanexo{Anexo A: Modelo Canvas...}`).
   - `\configurarseccionfinal`: Macro global que desactiva numeración de página y cabeceras (`empty`) para Bibliografía y Anexos.
   - `\palabrasclave{...}`, `\keywords{...}`, `\simikuna{...}`: Bloques semánticos normalizados para palabras clave en resúmenes (castellano, extranjero y lengua originaria).
