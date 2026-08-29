@@ -280,11 +280,33 @@
 % ============================================================
 % 14. ENTORNO PARA DEDICATORIAS Y AGRADECIMIENTOS
 % ============================================================
-\newenvironment{estilodedicatoria}{%
-    \vfill
-    \begin{raggedleft}\itshape%
+% Alinea el título y el contenido a la parte inferior en una misma hoja,
+% sin separación excesiva entre ellos y con registro automático en el TOC.
+\NewDocumentEnvironment{estilodedicatoria}{ o g }{%
+    \clearpage
+    \thispagestyle{plain}%
+    \IfValueTF{#1}{%
+        \phantomsection
+        \addcontentsline{toc}{chapter}{#1}%
+    }{%
+        \IfValueTF{#2}{%
+            \phantomsection
+            \addcontentsline{toc}{chapter}{#2}%
+        }{}%
+    }%
+    \vspace*{\fill}%
+    \begin{raggedleft}%
+    \IfValueTF{#1}{%
+        {\normalfont\Large\bfseries #1\par}%
+    }{%
+        \IfValueTF{#2}{%
+            {\normalfont\Large\bfseries #2\par}%
+        }{}%
+    }%
+    \itshape
 }{%
     \par\end{raggedleft}%
+    \clearpage
 }
 
 % ============================================================
