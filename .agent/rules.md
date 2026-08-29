@@ -99,6 +99,8 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
       * `\notafigura{...}`: Notas al pie de figuras bajo APA 7 (espaciado `\espacionotafigura`).
       * `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`: Macro de alto nivel para figuras e imágenes según APA 7.
       * `\titulocaratula{...}` y `\subtitulocaratula{...}`: Formato tipográfico en carátula.
+      * `\insertarmarcobth`: Inserción del marco perimetral azul en segundo plano de la portada BTH.
+      * `\institucionportadabth`, `\especialidadportadabth`, `\tituloportadabth`, `\formulagradoportadabth`, `\etiquetapostulantesbth`, `\etiquetatutorbth`, `\tutorportadabth`, `\pieportadabth`: Macros semánticas de la Portada BTH.
 
 15. **Metodología de la Investigación Aplicada (I+D Tecnológica):**
     - Identificar explícitamente la **Variable Independiente (VI)** (la solución tecnológica en Cap. 4) y las **Variables Dependientes (VD)** (efectos medidos: eficiencia, tiempos, costos, precisión en Cap. 5 y 7).

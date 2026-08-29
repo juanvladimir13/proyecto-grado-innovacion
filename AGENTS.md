@@ -46,7 +46,9 @@ proyecto-grado-innovacion/
 │   ├── estilos.sty                         # Estilos, carga de paquetes (biblatex-apa, listings), títulos APA 7
 │   └── configuracion.tex                   # Variables centralizadas de autor(es), título, tutor, institución y modalidad
 ├── preliminares/                           # Hojas frontales (numeración romana)
-│   ├── caratula.tex                        # Carátula oficial BTH (\titulocaratula, \subtitulocaratula)
+│   ├── caratula.tex                        # Carátula principal (enlaza por defecto a portada_bth.tex)
+│   ├── portada_bth.tex                     # Portada oficial BTH (con marco azul, escudo San Julián y macros globales)
+│   ├── caratula_ministerial.tex            # Carátula ministerial alternativa sobria (RM 0912/2023)
 │   ├── portada_universitaria.tex           # Portada alternativa estilo académico/universitario
 │   ├── agradecimiento.tex                  # Agradecimientos (\capitulopreliminar y \begin{estilodedicatoria})
 │   ├── dedicatoria.tex                     # Dedicatorias (\capitulopreliminar y \begin{estilodedicatoria})
@@ -84,7 +86,9 @@ proyecto-grado-innovacion/
 ├── imagenes/                               # Gráficos, diagramas y logotipos
 │   ├── README.md                           # Instrucciones para la gestión de recursos gráficos
 │   ├── figura_ejemplo.tex                  # Plantilla modular de figura bajo APA 7
-│   └── diagrama_proceso_ejemplo.png        # Diagrama de flujo técnico en alta resolución (300 DPI)
+│   ├── diagrama_proceso_ejemplo.png        # Diagrama de flujo técnico en alta resolución (300 DPI)
+│   ├── marco_portada_bth.png               # Marco decorativo perimetral azul de la portada BTH
+│   └── logo_bth_transparente.png           # Logotipo institucional oficial del Módulo San Julián
 ├── bibliografia/                           # Bibliografía BibLaTeX (APA 7ma Edición)
 │   └── referencias.bib                     # Base de datos de referencias (.bib) formateada en APA 7
 ├── anexos/                                 # Apéndices del documento
@@ -219,6 +223,8 @@ Este proyecto está configurado para la modalidad de **Innovación Tecnológica*
   - `\notafigura{...}`: Formato estandarizado para notas y fuentes al pie de figuras e ilustraciones bajo APA 7ma Edición (espaciado `\espacionotafigura`).
   - `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`: Macro de alto nivel para inserción estandarizada de ilustraciones con estructura APA 7.
   - `\titulocaratula{...}` y `\subtitulocaratula{...}`: Formato tipográfico y paleta institucional en la portada oficial.
+  - `\insertarmarcobth`: Inserción en background del marco perimetral azul ornamentado en la carátula BTH (gobernado por `\activarmarcobth`).
+  - `\institucionportadabth{...}`, `\especialidadportadabth{...}`, `\tituloportadabth{...}`, `\formulagradoportadabth{...}`, `\etiquetapostulantesbth{...}`, `\etiquetatutorbth{...}`, `\tutorportadabth{...}`, `\pieportadabth{...}{...}`: Macros semánticas de formato para los bloques de la Portada BTH.
 
 ### 14. Metodología de la Investigación Aplicada (I+D Tecnológica)
 * **REGLA:** El proyecto se estructura bajo el paradigma de **Investigación Aplicada y Desarrollo Tecnológico (I+D)** con diseño pre-experimental (diagnóstico $\rightarrow$ diseño $\rightarrow$ validación empírica $\rightarrow$ contraste antes vs. después):
