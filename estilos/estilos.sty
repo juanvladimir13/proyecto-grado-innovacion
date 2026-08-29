@@ -386,41 +386,8 @@
 }
 
 % ============================================================
-% 21. ESTILOS Y MACROS PARA PORTADA BTH (docs/portada.pdf)
+% 21. ESTILOS Y MACROS MODULARES DE LA CARÁTULA OFICIAL BTH
 % ============================================================
-% Inserción del marco decorativo perimetral azul en segundo plano (solo en la carátula)
-\newcommand{\insertarmarcobth}{%
-    \ifdefstring{\activarmarcobth}{true}{%
-        \AddToShipoutPictureBG*{%
-            \AtPageCenter{%
-                \makebox(0,0){%
-                    \includegraphics[width=\anchomarcobth,height=\altomarcobth]{\rutamarcobth}%
-                }%
-            }%
-        }%
-    }{}%
-}
-
-% Macros semánticas de formato para la Portada BTH
-\newcommand{\institucionportadabth}[1]{%
-    \begin{minipage}{0.80\textwidth}
-        \centering\large\bfseries\setstretch{1.15} #1\par
-    \end{minipage}\par
-}
-\newcommand{\especialidadportadabth}[1]{{\large\bfseries ``#1''\par}}
-\newcommand{\tituloportadabth}[1]{%
-    \begin{minipage}{0.78\textwidth}
-        \centering\large\bfseries\setstretch{1.2} #1\par
-    \end{minipage}\par
-}
-\newcommand{\formulagradoportadabth}[1]{%
-    \begin{minipage}{0.88\textwidth}
-        \centering\normalsize\setstretch{1.15} #1\par
-    \end{minipage}\par
-}
-\newcommand{\etiquetapostulantesbth}[1]{{\normalsize\textbf{#1}\par}}
-\newcommand{\etiquetatutorbth}[1]{{\normalsize\textbf{#1}\par\vspace{-\parskip}}}
-\newcommand{\tutorportadabth}[1]{{\normalsize\setstretch{1.0} #1\par}}
-\newcommand{\pieportadabth}[2]{{\normalsize\bfseries\setstretch{1.0} #1\\#2\par}}
+\RequirePackage{estilos/caratula}
 
 \endinput
