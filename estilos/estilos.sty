@@ -12,6 +12,7 @@
 \RequirePackage[spanish, es-tabla]{babel}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
+\RequirePackage{etoolbox}
 
 % ============================================================
 % 3. CONTROL DE SILABACIÓN (DESACTIVAR GUIÓN DE FIN DE LÍNEA)
@@ -133,12 +134,39 @@
 \RequirePackage{subcaption}
 
 % Configuración de etiquetas según Normas APA 7ma Edición
-\captionsetup{
-    font={small},
+\ifdefstring{\estilorotuloapa}{estricto}{%
+    % APA 7 Oficial: Número en negrita (línea 1) y título descriptivo en cursiva (línea 2)
+    \captionsetup{
+        font={small},
+        labelfont={bf},
+        textfont={it},
+        labelsep=newline,
+        justification=justified,
+        singlelinecheck=false,
+        skip=6pt
+    }
+}{%
+    % Variante adaptada: Rótulo y título en una sola línea
+    \captionsetup{
+        font={small},
+        labelfont={bf},
+        labelsep=colon,
+        justification=justified,
+        singlelinecheck=false,
+        skip=6pt
+    }
+}
+
+% Posición superior obligatoria para rótulos de tablas y figuras en APA 7
+\captionsetup[table]{position=top, skip=6pt}
+\captionsetup[figure]{position=top, skip=6pt}
+
+% Configuración para subfiguras comparativas
+\captionsetup[sub]{
+    font=footnotesize,
     labelfont={bf},
-    justification=justified,
-    singlelinecheck=false,
-    skip=6pt
+    labelsep=space,
+    textfont=normalfont
 }
 
 % Columnas flexibles automáticas con tabularx para tablas que respetan \textwidth
@@ -291,8 +319,15 @@
 % ============================================================
 % 18. NOTAS DE TABLA Y FIGURAS (NORMAS APA 7)
 % ============================================================
+% Nota al pie de tabla según Normas APA 7ma Edición
 \newcommand{\notatabla}[1]{%
     \par\vspace{4pt}%
+    {\small\textit{Nota.} #1\par}%
+}
+
+% Nota al pie de figura según Normas APA 7ma Edición
+\newcommand{\notafigura}[1]{%
+    \par\vspace{\espacionotafigura}%
     {\small\textit{Nota.} #1\par}%
 }
 
@@ -301,5 +336,30 @@
 % ============================================================
 \newcommand{\titulocaratula}[1]{{\LARGE\bfseries\color{primary} #1\par}}
 \newcommand{\subtitulocaratula}[1]{{\large\bfseries #1\par}}
+
+% ============================================================
+% 20. COMANDO SEMÁNTICO PARA FIGURAS E IMÁGENES (NORMAS APA 7)
+% ============================================================
+% Macro estandarizada para inserción ágil de figuras e imágenes
+% cumpliendo la estructura APA 7ma Edición:
+% - Rótulo y título ubicados ARRIBA de la imagen (\caption).
+% - Contenido visual centrado (\centering).
+% - Nota al pie opcional con formato semántico (\notafigura).
+%
+% Sintaxis: \incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}
+%   #1 [ancho]    : Opcional. Ancho de la figura (por defecto \anchuraimagenpredeterminada).
+%   #2 {archivo}  : Obligatorio. Nombre del archivo en imagenes/ (ej: diagrama.png).
+%   #3 {Título}   : Obligatorio. Título descriptivo según APA 7 (arriba de la imagen).
+%   #4 {etiqueta} : Obligatorio. Clave para referencia cruzada \ref{} (ej: fig:mi_figura).
+%   #5 {Nota}     : Obligatorio (dejar {} si no aplica). Nota explicativa o fuente al pie.
+\NewDocumentCommand{\incluirfigura}{ O{\anchuraimagenpredeterminada} m m m +m }{%
+    \begin{figure}[htbp]
+        \centering
+        \caption{#3}
+        \label{#4}
+        \includegraphics[width=#1]{#2}
+        \ifblank{#5}{}{\notafigura{#5}}
+    \end{figure}%
+}
 
 \endinput

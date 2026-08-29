@@ -55,7 +55,9 @@ proyecto-grado-innovacion/
 ├── scripts/                                # Scripts de utilidad y validación
 │   └── verificar_tablas.py                 # Auditoría de tablas APA 7 y prevención de desbordamientos
 ├── imagenes/                               # Repositorio de recursos gráficos e ilustraciones
-│   └── README.md                           # Instrucciones para la gestión de imágenes
+│   ├── README.md                           # Guía detallada para figuras e imágenes según APA 7
+│   ├── figura_ejemplo.tex                  # Plantilla modular de figura bajo APA 7
+│   └── diagrama_proceso_ejemplo.png        # Diagrama de flujo de alta resolución (300 DPI)
 ├── bibliografia/                           # Base de datos bibliográfica (APA 7ma Edición)
 │   └── referencias.bib                     # Archivo BibLaTeX (.bib) con fuentes de citas en APA 7
 ├── anexos/                                 # Apéndices e información complementaria
@@ -168,10 +170,9 @@ pdflatex main.tex
    * Agrega entradas a `bibliografia/referencias.bib`.
    * En el texto usa `\parencite{clave}` para citas entre paréntesis *(Apellido, 2024)* o `\textcite{clave}` para citas narrativas *Apellido (2024)*.
 
-4. **Insertar y Auditar Tablas e Imágenes:**
-   * Crea tablas en `tablas/` e impórtalas con `\input{tablas/mi_tabla.tex}` usando `booktabs`. Para notas al pie de tabla usa siempre `\notatabla{Fuente: ...}`. Para tablas anchas o con descripciones extensas usa `tabularx` (columnas `L`, `C`, `R` o `X`) para evitar que desborden los márgenes.
-   * Audita la conformidad de tus tablas con APA 7 en cualquier momento mediante `./compilar.sh --check-tablas`.
-   * Guarda imágenes en `imagenes/` e inclúyelas con `\includegraphics[width=...]{nombre.png}`.
+4. **Insertar y Auditar Tablas e Imágenes (Normas APA 7):**
+   * **Tablas:** Crea tablas en `tablas/` e impórtalas con `\input{tablas/mi_tabla.tex}` usando `booktabs`. Título arriba (`\caption{...}`) y notas al pie con `\notatabla{Fuente: ...}`. Para tablas con texto extenso usa `tabularx` (columnas `L`, `C`, `R` o `X`) para evitar que desborden los márgenes. Audita con `./compilar.sh --check-tablas`.
+   * **Imágenes y Figuras:** Guarda imágenes en `imagenes/` (.png, .jpg, .pdf). Sigue APA 7: título arriba (`\caption`), imagen centrada (`\centering`) y nota abajo con `\notafigura{Fuente: ...}` (espaciado `\espacionotafigura`). Puedes usar el entorno `figure` con ancho `\anchuraimagenpredeterminada` (configurado en `estilos/configuracion.tex`), la macro ágil `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}` o subfiguras con `subcaption` (ver guía completa en `imagenes/README.md` y plantilla `imagenes/figura_ejemplo.tex`).
 
 5. **Insertar Código Fuente:**
    * Almacena scripts en `codigo/` e impórtalos con `\lstinputlisting[language=Python, caption={...}, label={lst:...}]{codigo/script.py}`.

@@ -161,7 +161,10 @@ proyecto-grado-innovacion/
   - Para notas explicativas o fuentes al pie de la tabla, usar obligatoriamente la macro semántica `\notatabla{Fuente: ...}` (aplica tamaño pequeño, cursiva e interlineado ajustado según APA 7).
   - Para tablas con descripciones extensas, usar el entorno `tabularx` con ancho `\textwidth` y columnas auto-ajustables `L`, `C`, `R` o `X` (definidas en `estilos.sty`) para evitar desbordamientos del margen derecho.
   - **Auditoría de Tablas:** Ejecutar `./compilar.sh --check-tablas` (o `python3 scripts/verificar_tablas.py`) para validar que ninguna tabla rompa la diagramación ni viole APA 7.
-* **Imágenes:** Guardar en `imagenes/` e incluirlas sin prefijo de ruta (ya configurado en `estilos.sty`).
+* **Imágenes y Figuras (Normas APA 7ma Edición):** Guardar en `imagenes/` (.png, .jpg, .pdf) e incluirlas sin prefijo de ruta (ya configurado en `estilos.sty`).
+  - **Estructura APA 7:** Título y rótulo obligatoriamente **arriba** de la imagen (`\caption{...}\label{fig:...}`), contenido gráfico centrado (`\centering`), y notas explicativas o fuentes **abajo** con la macro semántica `\notafigura{Fuente: ...}` (espaciado `\espacionotafigura`).
+  - **Dimensiones:** Ancho estándar gobernado centralmente por `\anchuraimagenpredeterminada` (en `estilos/configuracion.tex`, por defecto `0.8\textwidth`).
+  - **Formas de Inclusión:** Entorno clásico `\begin{figure}[htbp]`, macro semántica `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`, o subfiguras con `subcaption` (guía en `imagenes/README.md` y plantilla `imagenes/figura_ejemplo.tex`).
 
 ### 7. Inserción de Código Fuente y Algoritmos
 * **Motor:** Se utiliza el paquete `listings` con el estilo `estilocodigo` predeterminado y tipografía Courier.
@@ -210,7 +213,9 @@ Este proyecto está configurado para la modalidad de **Innovación Tecnológica*
   - `\seccionanexo{Título}`: Encabezados de secciones de anexos con inclusión automática en el TOC (`\seccionanexo{Anexo A: Modelo Canvas...}`).
   - `\configurarseccionfinal`: Macro global que desactiva numeración de página y cabeceras (`empty`) para Bibliografía y Anexos.
   - `\palabrasclave{...}`, `\keywords{...}`, `\simikuna{...}`: Bloques semánticos normalizados para palabras clave en resúmenes (castellano, extranjero y lengua originaria).
-  - `\notatabla{...}`: Formato estandarizado para notas y fuentes al pie de tablas e ilustraciones bajo APA 7ma Edición.
+  - `\notatabla{...}`: Formato estandarizado para notas y fuentes al pie de tablas bajo APA 7ma Edición.
+  - `\notafigura{...}`: Formato estandarizado para notas y fuentes al pie de figuras e ilustraciones bajo APA 7ma Edición (espaciado `\espacionotafigura`).
+  - `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`: Macro de alto nivel para inserción estandarizada de ilustraciones con estructura APA 7.
   - `\titulocaratula{...}` y `\subtitulocaratula{...}`: Formato tipográfico y paleta institucional en la portada oficial.
 
 ---

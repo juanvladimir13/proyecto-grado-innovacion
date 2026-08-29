@@ -82,3 +82,59 @@
 % Espacio superior vertical antes del texto en dedicatoria y agradecimiento
 \newcommand{\espaciosuperiordedicatoria}{3cm}
 
+% ------------------------------------------------------------
+% 10. CONFIGURACIÓN DE FIGURAS E IMÁGENES (NORMAS APA 7)
+% ------------------------------------------------------------
+% Ancho predeterminado estándar para figuras e ilustraciones:
+% Se recomienda 0.8\textwidth para mantener proporciones equilibradas
+% dentro de los márgenes de página carta (3.0 cm izq, 2.5 cm der).
+\newcommand{\anchuraimagenpredeterminada}{0.8\textwidth}
+
+% Espaciado vertical entre la parte inferior de la imagen y la nota al pie:
+\newcommand{\espacionotafigura}{4pt}
+
+% Estilo de presentación del rótulo (caption) para tablas y figuras:
+% - 'estricto' : Norma APA 7ma Edición oficial (2 líneas: número en negrita y título abajo en cursiva).
+% - 'enlinea'  : Formato adaptado compacto en 1 sola línea (ej. "Figura 1.1: Título de la figura").
+\newcommand{\estilorotuloapa}{estricto}
+
+% -------------------------------------------------------------------------
+% GUÍA RÁPIDA: CÓMO INSERTAR FIGURAS BAJO NORMAS APA 7MA EDICIÓN
+% -------------------------------------------------------------------------
+% Según las Normas APA 7ma Edición, las figuras siguen la misma convención
+% estructural y visual que las tablas:
+%
+% 1. RÓTULO Y TÍTULO ARRIBA DE LA IMAGEN:
+%    - Se colocan con el comando estándar \caption{...}.
+%    - El número de figura aparece en negrita (ej. "Figura 1.1:").
+%    - El título debe ser claro, conciso y explicativo.
+%
+% 2. CONTENIDO VISUAL CENTRADO:
+%    - La imagen debe estar centrada horizontalmente usando \centering.
+%    - Las imágenes deben almacenarse en la carpeta 'imagenes/' (.png, .jpg, .pdf).
+%    - Ajustar el ancho con [width=\anchuraimagenpredeterminada] o valor deseado.
+%
+% 3. NOTA AL PIE DE LA FIGURA (DEBAJO DE LA IMAGEN):
+%    - Se coloca obligatoriamente usando la macro semántica \notafigura{...}.
+%    - Imprime automáticamente el texto "Nota." en cursiva y el contenido aclaratorio.
+%    - Debe indicar la fuente o autoría:
+%      * De autoría propia: \notafigura{Elaboración propia.}
+%      * Con base en fuentes externas: \notafigura{Adaptado de \textcite{autor2024}.}
+%
+% FORMAS DE INCLUSIÓN EN EL DOCUMENTO:
+%
+% Forma 1: Mediante el entorno flotante estándar 'figure' (Recomendado):
+% \begin{figure}[htbp]
+%     \centering
+%     \caption{Diagrama de bloques funcional del sistema.}
+%     \label{fig:diagrama_bloques}
+%     \includegraphics[width=\anchuraimagenpredeterminada]{diagrama_bloques.png}
+%     \notafigura{Elaboración propia con base en especificaciones técnicas.}
+% \end{figure}
+%
+% Forma 2: Mediante la macro semántica '\incluirfigura' (Inserción rápida):
+% \incluirfigura[ancho opcional]{archivo}{Título}{clave_label}{Nota al pie}
+% Ejemplo:
+% \incluirfigura{diagrama_proceso.png}{Flujo de proceso productivo.}{fig:proceso}{Elaboración propia.}
+% -------------------------------------------------------------------------
+

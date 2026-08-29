@@ -48,11 +48,10 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
 
 7. **Tablas e Ilustraciones:**
    - Tablas independientes en [tablas/](tablas/) e importar vía `\input{tablas/archivo.tex}`.
-   - Normas APA 7: usar `booktabs` (`\toprule`, `\midrule`, `\bottomrule`), PROHIBIDO el uso de líneas verticales (`|`) y de `\hline`. El `\caption` debe ubicarse obligatoriamente arriba de la tabla.
-   - Para notas explicativas o fuentes de tablas/figuras, usar la macro semántica `\notatabla{Fuente: ...}` (tamaño pequeño, cursiva e interlineado APA 7).
+   - Normas APA 7 para tablas: usar `booktabs` (`\toprule`, `\midrule`, `\bottomrule`), PROHIBIDO el uso de líneas verticales (`|`) y de `\hline`. El `\caption` debe ubicarse obligatoriamente arriba de la tabla y notas al pie con `\notatabla{Fuente: ...}`.
    - Para tablas anchas o con descripciones extensas, usar `tabularx` con columnas auto-ajustables `L`, `C`, `R` o `X` para evitar desbordamientos del margen derecho (`\textwidth`).
    - Auditar tablas con `./compilar.sh --check-tablas` (o [scripts/verificar_tablas.py](scripts/verificar_tablas.py)).
-   - Figuras en [imagenes/](imagenes/) e incluir con `\includegraphics{archivo.ext}` (ruta ya preconfigurada).
+   - Figuras e imágenes en [imagenes/](imagenes/) (.png, .jpg, .pdf) bajo APA 7: rótulo y título arriba (`\caption`), gráfico centrado (`\centering`), nota abajo (`\notafigura{Fuente: ...}`) y ancho configurable `\anchuraimagenpredeterminada`. Inserción ágil mediante `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}` o subfiguras con `subcaption` (guía en [imagenes/README.md](imagenes/README.md) y plantilla [imagenes/figura_ejemplo.tex](imagenes/figura_ejemplo.tex)).
 
 8. **Control de Silabación:**
    - División de palabras desactivada globalmente (`\hyphenpenalty=10000`, `\exhyphenpenalty=10000`).
@@ -96,6 +95,8 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
       * `\seccionanexo{Título}`: Encabezados de secciones de anexos agregados a TOC.
       * `\configurarseccionfinal`: Estilo de página limpio (`empty`) para bibliografía y anexos.
       * `\palabrasclave{...}`, `\keywords{...}`, `\simikuna{...}`: Bloques semánticos de palabras clave.
-      * `\notatabla{...}`: Notas al pie de tablas y figuras APA 7.
+      * `\notatabla{...}`: Notas al pie de tablas bajo APA 7.
+      * `\notafigura{...}`: Notas al pie de figuras bajo APA 7 (espaciado `\espacionotafigura`).
+      * `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`: Macro de alto nivel para figuras e imágenes según APA 7.
       * `\titulocaratula{...}` y `\subtitulocaratula{...}`: Formato tipográfico en carátula.
 
