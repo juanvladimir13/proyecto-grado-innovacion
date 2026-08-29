@@ -49,7 +49,7 @@ Actúa como un **revisor metodológico de proyectos de grado BTH**. Tu tarea es 
 ### Contexto del documento
 - Modalidad: Proyecto de Grado — Innovación Tecnológica (BTH)
 - Estructura oficial requerida:
-  1. Preliminares: Carátula, Portada, Dedicatoria, Agradecimiento, Resúmenes (castellano, originario, extranjero), Índices (TOC, tablas, figuras).
+  1. Preliminares: Carátula oficial BTH, Agradecimiento, Dedicatoria, Índices (TOC, figuras, tablas), Resumen (castellano, extranjero, originario).
   2. Capítulo 1: Introducción (contexto general, motivación y pertinencia, contribución esperada).
   3. Capítulo 2: Planteamiento del Problema (diagnóstico y descripción de la realidad, identificación del problema, formulación del problema, objetivos general/específicos, justificación).
   4. Capítulo 3: Marco Referencial (antecedentes, bases teóricas, marco conceptual y normativo).
@@ -67,7 +67,7 @@ Actúa como un **revisor metodológico de proyectos de grado BTH**. Tu tarea es 
 2. **Jerarquía modular**: ¿se respeta la organización donde cada capítulo cuenta con su `main.tex` y sus subsecciones `.tex`?
 3. **Numeración y títulos**: ¿los títulos siguen la nomenclatura oficial de la modalidad sin prefijos redundantes ("Capítulo X") en los nombres de sección?
 4. **Balance estructural**: ¿los capítulos guardan una proporción equilibrada en su extensión según la relevancia técnica de cada apartado?
-5. **Estandarización semántica**: ¿los preliminares emplean `\capitulopreliminar` y `\begin{estilodedicatoria}`, los anexos emplean `\capitulopreliminar{ANEXOS}` y `\seccionanexo{...}`, y las secciones finales están configuradas con `\configurarseccionfinal`?
+5. **Estandarización semántica**: ¿los preliminares emplean `\begin{estilodedicatoria}{Título}` (agradecimiento y dedicatoria al pie en una sola hoja sin separación entre título y contenido) y `\capitulopreliminar{Resumen}`, los anexos emplean `\capitulopreliminar{ANEXOS}` y `\seccionanexo{...}`, y las secciones finales están configuradas con `\configurarseccionfinal`?
 
 ### Formato de salida esperado
 ```

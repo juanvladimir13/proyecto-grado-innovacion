@@ -17,9 +17,10 @@ proyecto-grado-innovacion/
 ├── compilar.sh                             # Script de compilación y limpieza (soporta --clean, --fast, etc.)
 ├── estilos/                                # Paquete y configuraciones de diseño de LaTeX
 │   ├── estilos.sty                         # Archivo de estilos (márgenes, fuentes, espaciados y paquetes)
-│   └── configuracion.tex                   # Metadatos centralizados (título, autor(es), tutor, institución, modalidad)
+│   ├── configuracion.tex                   # Metadatos centralizados (título, autor(es), tutor, institución, modalidad)
+│   └── caratula.sty                        # Estilos y diagramación modular de la Carátula Oficial BTH
 ├── preliminares/                           # Hojas preliminares con numeración romana
-│   ├── caratula.tex                        # Portada oficial BTH consolidada (marco perimetral azul opcional y macros semánticas)
+│   ├── caratula.tex                        # Portada oficial BTH modular (\imprimircaratulabth, marco azul opcional)
 │   ├── agradecimiento.tex                  # Página de agradecimientos (\begin{estilodedicatoria}{Agradecimiento})
 │   ├── dedicatoria.tex                     # Página de dedicatoria (\begin{estilodedicatoria}{Dedicatoria})
 │   └── resumen.tex                         # Resumen (\capitulopreliminar, \palabrasclave, \keywords, \simikuna)

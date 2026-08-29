@@ -71,7 +71,7 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
     - Ficha de datos del proyecto en [docs/ficha-proyecto.md](docs/ficha-proyecto.md) (alimentada desde `docs/proyecto.rtf` o `docs/proyecto.md` y consultas interactivas).
     - Preliminares: [agradecimiento.tex](preliminares/agradecimiento.tex) y [dedicatoria.tex](preliminares/dedicatoria.tex) utilizan el entorno `\begin{estilodedicatoria}{Título}` (alineado a la parte inferior en una misma hoja, sin separación entre título y contenido, con registro automático en el TOC).
     - Resúmenes en [preliminares/resumen.tex](preliminares/resumen.tex) formatean palabras clave con `\palabrasclave{...}`, `\keywords{...}` y `\simikuna{...}`.
-    - Portada oficial BTH consolidada en [preliminares/caratula.tex](preliminares/caratula.tex) con marco decorativo perimetral azul gobernado por `\activarmarcobth`.
+    - Portada oficial BTH modular en [preliminares/caratula.tex](preliminares/caratula.tex) invocando `\imprimircaratulabth` (estilos encapsulados en [estilos/caratula.sty](estilos/caratula.sty), marco decorativo perimetral azul gobernado por `\activarmarcobth`).
 
 11. **Prompts de Apoyo (`promts/`):**
     - Guiar la redacción con [promts/migracion/ficha-proyecto.md](promts/migracion/ficha-proyecto.md).
@@ -98,8 +98,11 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
       * `\notatabla{...}`: Notas al pie de tablas bajo APA 7.
       * `\notafigura{...}`: Notas al pie de figuras bajo APA 7 (espaciado `\espacionotafigura`).
       * `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`: Macro de alto nivel para figuras e imágenes según APA 7.
+      * `\imprimircaratulabth` (o `\imprimircaratula`): Generación automática modular de la carátula oficial BTH (definida en `estilos/caratula.sty`).
+      * `\begin{estilocaratulabth}...\end{estilocaratulabth}`: Entorno modular de carátula con geometría (3.0 cm / 2.5 cm) y tipografía Times New Roman `ptm`.
       * `\insertarmarcobth`: Inserción del marco perimetral azul en segundo plano de la portada BTH.
-      * `\institucionportadabth`, `\especialidadportadabth`, `\tituloportadabth`, `\formulagradoportadabth`, `\etiquetapostulantesbth`, `\etiquetatutorbth`, `\tutorportadabth`, `\pieportadabth`: Macros semánticas de la Portada Oficial BTH consolidada en `caratula.tex`.
+      * `\institucionportadabth`, `\especialidadportadabth`, `\tituloportadabth`, `\formulagradoportadabth`, `\etiquetapostulantesbth`, `\etiquetatutorbth`, `\tutorportadabth`, `\pieportadabth`: Macros semánticas de formato en `estilos/caratula.sty`.
+      * `\bloqueinstitucionportada`, `\bloquelogoportada`, `\bloquetituloportada`, `\bloquegradoportada`, `\bloquepostulantesportada`, `\bloquetutorportada`, `\bloquepieportada`: Macros de bloques estructurados con espaciado vertical integrado.
       * `\titulocaratula{...}` y `\subtitulocaratula{...}`: Macros de compatibilidad tipográfica.
 
 15. **Metodología de la Investigación Aplicada (I+D Tecnológica):**

@@ -44,9 +44,10 @@ proyecto-grado-innovacion/
 ├── compilar.sh                             # Script ejecutable de compilación (pdflatex + biber) y limpieza
 ├── estilos/
 │   ├── estilos.sty                         # Estilos, carga de paquetes (biblatex-apa, listings), títulos APA 7
-│   └── configuracion.tex                   # Variables centralizadas de autor(es), título, tutor, institución y modalidad
+│   ├── configuracion.tex                   # Variables centralizadas de autor(es), título, tutor, institución y modalidad
+│   └── caratula.sty                        # Estilos, tipografía (Times New Roman), geometría y diagramación de la carátula BTH
 ├── preliminares/                           # Hojas frontales (numeración romana)
-│   ├── caratula.tex                        # Portada oficial BTH consolidada (marco perimetral azul opcional y macros semánticas)
+│   ├── caratula.tex                        # Portada oficial BTH modular (\imprimircaratulabth, marco azul opcional)
 │   ├── agradecimiento.tex                  # Agradecimientos (\begin{estilodedicatoria}{Agradecimiento})
 │   ├── dedicatoria.tex                     # Dedicatorias (\begin{estilodedicatoria}{Dedicatoria})
 │   └── resumen.tex                         # Resúmenes (\capitulopreliminar, \palabrasclave, \keywords, \simikuna)
@@ -222,8 +223,11 @@ Este proyecto está configurado para la modalidad de **Innovación Tecnológica*
   - `\notatabla{...}`: Formato estandarizado para notas y fuentes al pie de tablas bajo APA 7ma Edición.
   - `\notafigura{...}`: Formato estandarizado para notas y fuentes al pie de figuras e ilustraciones bajo APA 7ma Edición (espaciado `\espacionotafigura`).
   - `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`: Macro de alto nivel para inserción estandarizada de ilustraciones con estructura APA 7.
+  - `\imprimircaratulabth` (o `\imprimircaratula`): Macro semántica de alto nivel que genera la carátula oficial BTH con marco perimetral opcional, tipografía Times New Roman y proporciones exactas, modularizada en `estilos/caratula.sty`.
+  - `\begin{estilocaratulabth}...\end{estilocaratulabth}`: Entorno modular que encapsula la geometría (márgenes carta 3.0 cm / 2.5 cm), tipografía `ptm`, marco y centrado de la carátula oficial.
   - `\insertarmarcobth`: Inserción en background del marco perimetral azul ornamentado en la carátula BTH (gobernado por `\activarmarcobth`).
-  - `\institucionportadabth{...}`, `\especialidadportadabth{...}`, `\tituloportadabth{...}`, `\formulagradoportadabth{...}`, `\etiquetapostulantesbth{...}`, `\etiquetatutorbth{...}`, `\tutorportadabth{...}`, `\pieportadabth{...}{...}`: Macros semánticas de diagramación y tipografía para los bloques de la Portada Oficial BTH consolidada en `preliminares/caratula.tex`.
+  - `\institucionportadabth{...}`, `\especialidadportadabth{...}`, `\tituloportadabth{...}`, `\formulagradoportadabth{...}`, `\etiquetapostulantesbth{...}`, `\etiquetatutorbth{...}`, `\tutorportadabth{...}`, `\pieportadabth{...}{...}`: Macros semánticas de diagramación y tipografía para los bloques individuales de la carátula en `estilos/caratula.sty`.
+  - `\bloqueinstitucionportada`, `\bloquelogoportada`, `\bloquetituloportada`, `\bloquegradoportada`, `\bloquepostulantesportada`, `\bloquetutorportada`, `\bloquepieportada`: Macros de bloques estructurados con espaciado vertical integrado.
   - `\titulocaratula{...}` y `\subtitulocaratula{...}`: Macros de compatibilidad tipográfica institucional.
 
 ### 14. Metodología de la Investigación Aplicada (I+D Tecnológica)

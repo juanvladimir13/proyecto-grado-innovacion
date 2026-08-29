@@ -120,9 +120,15 @@ Lee docs/ficha-proyecto.md (ya completado y validado con el usuario) y estilos/c
    nunca quemes (hardcodees) estos datos directamente en los archivos .tex de capítulos,
    preliminares o carátula.
 
-3. Verifica que en `main.tex` esté activa la inclusión `\input{capitulos/index.tex}`.
+3. Si en la Sección 0 se definieron textos para Dedicatoria y Agradecimiento, actualiza
+   `preliminares/dedicatoria.tex` (`\begin{estilodedicatoria}{Dedicatoria}`) y
+   `preliminares/agradecimiento.tex` (`\begin{estilodedicatoria}{Agradecimiento}`).
+   Si se definieron los resúmenes y palabras clave, actualiza `preliminares/resumen.tex`
+   con las macros semánticas `\palabrasclave`, `\keywords` y `\simikuna`.
 
-4. No modifiques ningún otro archivo. Muestra el diff de `estilos/configuracion.tex` al terminar.
+4. Verifica que en `main.tex` esté activa la inclusión `\input{capitulos/index.tex}`.
+
+5. No modifiques archivos de `capitulos/` en este paso. Muestra el diff de los archivos modificados al terminar.
 ```
 
 ---

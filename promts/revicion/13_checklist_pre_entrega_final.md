@@ -54,13 +54,12 @@ Actúa como el **presidente de tribunal de titulación del Bachillerato Técnico
 ### Checklist Oficial a Verificar
 
 1. **Hojas preliminares (numeración romana minúscula):**
-   - [ ] Carátula oficial BTH con logos institucionales, tipografía normalizada (`\titulocaratula`, `\subtitulocaratula`), datos del autor/autores (sin campos de C.I.), tutor, UE, subsistema y año de gestión.
-   - [ ] Portada académica interior.
-   - [ ] Dedicatoria y Agradecimiento con formato semántico unificado (`\begin{estilodedicatoria}{Título}` alineados a la parte inferior en una misma hoja sin separación entre título y texto).
+   - [ ] Carátula oficial BTH consolidada con logos institucionales, marco perimetral azul opcional (`\activarmarcobth`), datos de autor(es) (sin campos de C.I.), tutor, UE, fórmula de grado y año de gestión.
+   - [ ] Agradecimiento y Dedicatoria con formato semántico unificado (`\begin{estilodedicatoria}{Título}` alineados a la parte inferior en una misma hoja sin separación entre título y texto).
+   - [ ] Índice General de Contenidos, Índice de Figuras e Índice de Tablas generados automáticamente.
    - [ ] Resumen en castellano (máx. 300 palabras), con `\palabrasclave{...}`.
-   - [ ] Resumen en lengua originaria (quechua, aymara o guaraní según contexto regional), con `\simikuna{...}`.
    - [ ] Abstract en lengua extranjera (inglés), con `\keywords{...}`.
-   - [ ] Índice General de Contenidos, Índice de Tablas e Índice de Figuras generados automáticamente.
+   - [ ] Resumen en lengua originaria (quechua, aymara o guaraní según contexto regional), con `\simikuna{...}`.
 
 2. **Estructura de los 9 Capítulos (numeración arábiga centrada al pie):**
    - [ ] **Capítulo 1 (Introducción):** Contexto del sector, motivación y pertinencia, contribución esperada e impacto innovador.
@@ -82,6 +81,7 @@ Actúa como el **presidente de tribunal de titulación del Bachillerato Técnico
    - [ ] Compilación limpia con `./compilar.sh --clean` sin errores `LaTeX Error` ni advertencias `Unresolved references`.
    - [ ] Sin comandos duros o texto quemado fuera de `estilos/configuracion.tex`.
    - [ ] Auditoría de tablas exitosa con `./compilar.sh --check-tablas` sin errores de formato APA 7 ni desbordamiento de página, con notas formateadas con `\notatabla`.
+   - [ ] Figuras e ilustraciones bajo APA 7 con rótulo superior, centrado y notas formateadas con `\notafigura` o mediante `\incluirfigura`.
    - [ ] Formato numérico conforme a SI/ISO 80000-1 (punto decimal, sin coma para miles ni decimales).
    - [ ] Prioridad de viñetas respetada (uso predominante de `itemize` frente a `enumerate`).
 
