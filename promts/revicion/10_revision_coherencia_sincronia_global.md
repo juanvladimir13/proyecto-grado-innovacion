@@ -48,15 +48,16 @@ Actúa como un **auditor técnico y metodológico de proyectos de grado**. Tu mi
 
 ### Criterios de auditoría global
 
-1. **Hilo conductor y sincronía (Problema ➔ Prototipo ➔ Validación ➔ Impacto ➔ Conclusiones):**
+1. **Hilo conductor y sincronía (Problema ➔ Hipótesis/Objetivos ➔ Prototipo/Variables ➔ Validación ➔ Impacto ➔ Conclusiones):**
    - ¿El problema diagnosticado en el Cap. 2 es exactamente lo que resuelve la innovación diseñada en el Cap. 4?
-   - ¿Las métricas evaluadas en el Cap. 5 y 7 demuestran de forma empírica la solución planteada en el Cap. 2?
-   - ¿Cada objetivo específico formulado en el Cap. 2 tiene su desarrollo en el Cap. 4/5, su resultado medido en el Cap. 7 y su conclusión de cierre en el Cap. 9?
+   - ¿La Variable Independiente (prototipo/solución del Cap. 4) incide directamente sobre las Variables Dependientes medidas en el Cap. 5 y 7?
+   - ¿Las métricas evaluadas en el Cap. 5 y 7 demuestran de forma empírica la solución planteada en el Cap. 2 y contrastan la hipótesis (si aplica)?
+   - ¿Cada objetivo específico formulado en el Cap. 2 tiene su desarrollo en el Cap. 4, su operacionalización en el Cap. 5, su resultado medido en el Cap. 7 y su conclusión de cierre en el Cap. 9?
 
 2. **Consistencia numérica y paramétrica:**
    - ¿Los costos de inversión y componentes calculados en el Cap. 4 coinciden con los montos citados en el Cap. 2 (justificación) y Cap. 7 (análisis costo-beneficio)?
-   - ¿Las especificaciones técnicas (voltajes, dimensiones, capacidades) son idénticas en Cap. 3, 4 y 7?
-   - ¿El tamaño de la muestra o población evaluada en el Cap. 5 coincide con los datos presentados en el Cap. 7?
+   - ¿Las especificaciones técnicas (voltajes, dimensiones, capacidades, tolerancias) son idénticas en Cap. 3, 4, 5 y 7?
+   - ¿El tamaño de la muestra o unidades de prueba evaluadas en el Cap. 5 coincide con los datos presentados en el Cap. 7?
    - ¿El formato numérico es homogéneo en todo el texto y tablas? (Uso obligatorio de punto `.` para decimales como `12.50` y ausencia de comas o puntos en millares, ej. `4500` o `25 000` según norma SI/ISO 80000-1).
 
 3. **Consistencia terminológica y conceptual:**
@@ -70,12 +71,12 @@ Actúa como un **auditor técnico y metodológico de proyectos de grado**. Tu mi
 - Hallazgos críticos detectados: [lista o "Ninguno"]
 - Fortalezas de coherencia: ...
 
-## Matriz de alineación transversal
-| Eje temático | Cap. 2 (Problema/Obj) | Cap. 4 (Innovación) | Cap. 7 (Resultados) | Cap. 9 (Conclusiones) | ¿Alineado? |
-|---|---|---|---|---|---|
-| Eje 1 (Diagnóstico/Base) | ... | ... | ... | ... | ... |
-| Eje 2 (Desarrollo/Diseño) | ... | ... | ... | ... | ... |
-| Eje 3 (Validación/Impacto) | ... | ... | ... | ... | ... |
+## Matriz de alineación transversal de investigación
+| Eje temático / Variable | Cap. 2 (Problema/Obj/Hipótesis) | Cap. 4 (Innovación / VI) | Cap. 5 (Método / Instrumentos) | Cap. 7 (Resultados / VD) | Cap. 9 (Conclusiones) | ¿Alineado? |
+|---|---|---|---|---|---|---|
+| Eje 1 (Diagnóstico / Línea base) | ... | ... | ... | ... | ... | ... |
+| Eje 2 (Desarrollo tecnológico) | ... | ... | ... | ... | ... | ... |
+| Eje 3 (Validación e impacto) | ... | ... | ... | ... | ... | ... |
 
 ## Discrepancias numéricas o conceptuales detectadas
 | Parámetro / Variable | Valor en Cap. A | Valor en Cap. B | Observación de discrepancia |

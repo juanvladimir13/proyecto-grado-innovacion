@@ -150,6 +150,7 @@ capitulos/
 - **Objetivo específico 2:** [DATO PENDIENTE]
 - **Objetivo específico 3:** [DATO PENDIENTE]
 - **Objetivo específico 4** (opcional): [DATO PENDIENTE]
+- **Hipótesis tecnológica / Idea a defender (opcional/si el tutor lo requiere):** [DATO PENDIENTE] _(ej. "La implementación del prototipo X optimiza el rendimiento Y en un Z% respecto al método tradicional")_
 
 ### 2.5 Justificación
 
@@ -241,6 +242,9 @@ capitulos/
 - **¿Qué lo diferencia de soluciones existentes?:** [DATO PENDIENTE]
 - **Estándar de calidad que cumple o busca cumplir:** [DATO PENDIENTE] _(ej. "NB 688, pruebas de resistencia IP65")_
 - **Criterios de control de calidad aplicados:** [DATO PENDIENTE] _(ej. "Pruebas de funcionamiento durante 72 h continuas")_
+- **Diagrama, esquema técnico o plano del diseño (APA 7):** [DATO PENDIENTE] _(ej. "Diagrama de bloques de arquitectura / Plano de circuitos / Diagrama de flujo de proceso")_
+  - **Archivo de imagen sugerido en `imagenes/`:** [DATO PENDIENTE] _(ej. "diagrama_arquitectura.png")_
+  - **Nota explicativa / Fuente (macro `\notafigura`):** [DATO PENDIENTE] _(ej. "Elaboración propia con base en el diseño modular")_
 
 ### 4.2 Planificación y cronograma
 
@@ -357,13 +361,17 @@ capitulos/
 - **Tipo de investigación:** [DATO PENDIENTE] _(ej. "Aplicada-experimental", "Descriptiva-proyectiva")_
 - **Alcance:** [DATO PENDIENTE] _(ej. "Exploratorio", "Descriptivo", "Correlacional", "Explicativo")_
 - **Diseño metodológico:** [DATO PENDIENTE] _(ej. "Pre-experimental con pre-test y post-test")_
+- **Variable Independiente (VI — solución técnica o prototipo):** [DATO PENDIENTE] _(ej. "Plataforma web CaliNote / Sistema automatizado de riego solar")_
+- **Variable(s) Dependiente(s) (VD — efectos medibles y de impacto):** [DATO PENDIENTE] _(ej. "1) Tiempo de gestión de tareas, 2) Tasa de cumplimiento escolar")_
+- **Indicadores y unidades de medida principales:** [DATO PENDIENTE] _(ej. "Minutos/registro, porcentaje (%) de entregas, costo operativo en Bs.")_
 - **Justificación breve del tipo elegido:** [DATO PENDIENTE]
 - **Autor de referencia metodológica:** [DATO PENDIENTE] _(ej. "Hernández Sampieri, 2014")_
 
 ### 5.2 Población y muestra
 
-- **Población total del estudio:** [DATO PENDIENTE] _(ej. "120 familias del distrito 3 de Achacachi")_
+- **Población total del estudio:** [DATO PENDIENTE] _(ej. "120 familias del distrito 3 de Achacachi / 15 docentes de la Unidad Educativa")_
   - **Fuente del dato poblacional:** [DATO PENDIENTE]
+- **Unidades de prueba experimental o técnica** (si aplica): [DATO PENDIENTE] _(ej. "30 lotes de prueba / 50 ciclos de simulación")_
 - **Tipo de muestreo:** [DATO PENDIENTE] _(ej. "No probabilístico por conveniencia", "Aleatorio simple")_
 - **Tamaño de la muestra:** [DATO PENDIENTE]
 - **Fórmula o criterio utilizado para determinar la muestra:** [DATO PENDIENTE]
@@ -374,17 +382,19 @@ capitulos/
    - Instrumento: [DATO PENDIENTE] _(ej. "Cuestionario de 15 preguntas cerradas")_
    - Objetivo: [DATO PENDIENTE]
    - Aplicada a: [DATO PENDIENTE]
+   - Validación o prueba previa del instrumento: [DATO PENDIENTE]
    - Cantidad de aplicaciones: [DATO PENDIENTE]
 2. **Técnica 2:** [DATO PENDIENTE] _(ej. "Observación directa")_
-   - Instrumento: [DATO PENDIENTE] _(ej. "Ficha de observación")_
+   - Instrumento: [DATO PENDIENTE] _(ej. "Ficha de observación y lista de cotejo")_
    - Objetivo: [DATO PENDIENTE]
    - Aplicada a: [DATO PENDIENTE]
    - Cantidad de aplicaciones: [DATO PENDIENTE]
-3. **Técnica 3:** [DATO PENDIENTE] _(ej. "Medición de campo")_
-   - Instrumento: [DATO PENDIENTE] _(ej. "Multímetro, higrómetro")_
+3. **Técnica 3:** [DATO PENDIENTE] _(ej. "Medición técnica / Ensayo de campo")_
+   - Instrumento: [DATO PENDIENTE] _(ej. "Multímetro digital, balanza de precisión, cronómetro")_
+   - Precisión / Tolerancia / Calibración del instrumento: [DATO PENDIENTE] _(ej. "Tolerancia ±0.5%, calibrado según norma del fabricante")_
    - Objetivo: [DATO PENDIENTE]
    - Aplicada a: [DATO PENDIENTE]
-   - Cantidad de aplicaciones: [DATO PENDIENTE]
+   - Cantidad de aplicaciones / repeticiones: [DATO PENDIENTE]
 4. **Técnica 4:** [DATO PENDIENTE] _(ej. "Entrevista")_
    - Instrumento: [DATO PENDIENTE] _(ej. "Guía semiestructurada, 8 preguntas")_
    - Objetivo: [DATO PENDIENTE]

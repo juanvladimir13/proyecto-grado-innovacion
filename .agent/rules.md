@@ -100,3 +100,10 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
       * `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`: Macro de alto nivel para figuras e imágenes según APA 7.
       * `\titulocaratula{...}` y `\subtitulocaratula{...}`: Formato tipográfico en carátula.
 
+15. **Metodología de la Investigación Aplicada (I+D Tecnológica):**
+    - Identificar explícitamente la **Variable Independiente (VI)** (la solución tecnológica en Cap. 4) y las **Variables Dependientes (VD)** (efectos medidos: eficiencia, tiempos, costos, precisión en Cap. 5 y 7).
+    - En mediciones técnicas, exigir especificaciones de calibración y márgenes de tolerancia en los instrumentos; en encuestas, verificar su validación previa.
+    - Diferenciar población/muestra de personas de unidades experimentales de prueba técnica (lotes, ciclos, réplicas).
+    - Evaluar hipótesis tecnológica (si el tutor la requiere) y contrastarla empíricamente con datos de pruebas piloto en el Cap. 7 y conclusiones del Cap. 9.
+    - Auditar la sincronía transversal de 5 ejes con el prompt 10: *Cap. 2 (Problema/Obj/Hipótesis) ↔ Cap. 4 (Innovación/VI) ↔ Cap. 5 (Método/Instrumentos) ↔ Cap. 7 (Resultados/VD) ↔ Cap. 9 (Conclusiones)*.
+

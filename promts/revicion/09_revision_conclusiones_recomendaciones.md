@@ -55,11 +55,12 @@ Actúa como un **revisor de comités de titulación BTH**. Evalúa el **Capítul
 4. **Recomendaciones técnicas y aplicadas**: ¿son directrices concretas (mantenimiento, calibración, capacitación de usuarios, posibles mejoras) y no consejos genéricos o triviales?
 5. **Tono conclusivo**: ¿evita el uso de citas bibliográficas o discusiones teóricas nuevas en esta sección final?
 6. **Listas y viñetas**: ¿se estructuran las conclusiones y recomendaciones mediante viñetas (`itemize`) en lugar de listas numeradas (`enumerate`)?
+7. **Cierre de hipótesis (si aplica)**: si se formuló hipótesis tecnológica o idea a defender en el Capítulo 2, ¿las conclusiones declaran explícitamente si fue demostrada o refutada a partir de la evidencia experimental del Capítulo 7?
 
 ### Formato de salida esperado
 ```
-## Matriz de Cierre de Objetivos
-| Objetivo Específico (Cap. 2) | Conclusión Asociada (Cap. 9) | ¿Cerrado con Evidencia? | Observación |
+## Matriz de Cierre de Objetivos e Hipótesis
+| Objetivo / Hipótesis | Conclusión Asociada (Cap. 9) | ¿Cerrado con Evidencia? | Observación |
 |---|---|---|---|
 
 ## Identificación de conclusiones huérfanas o no demostradas

@@ -56,12 +56,13 @@ Actúa como un **revisor técnico y evaluador de proyectos de grado BTH** en mod
 3. **Beneficios e impacto verificable**: ¿los impactos descritos están justificados con los datos de las pruebas y no con meras expectativas teóricas?
 4. **Matriz de comparación antes vs. después**: ¿la tabla comparativa contrasta indicadores medibles entre la situación manual/tradicional previa y la solución con la innovación tecnológica implementada?
 5. **Consistencia numérica**: ¿las cifras de porcentaje de mejora, tiempos o costos coinciden exactamente con los capítulos previos (Caps. 2, 4 y 5)?
+6. **Contraste de variables e hipótesis (si aplica)**: ¿los resultados demuestran la relación empírica entre la variable independiente (la innovación) y las variables dependientes (efectos medidos)? Si se planteó hipótesis tecnológica o idea a defender en el Cap. 2, ¿los datos recopilados la validan o refutan con evidencia estadística u operativa?
 
 ### Formato de salida esperado
 ```
-## Matriz Objetivo ↔ Resultado Técnico ↔ Evidencia
-| Objetivo Específico | Resultado Obtenido | Métrica / Evidencia | ¿Objetivo Cumplido? |
-|---|---|---|---|
+## Matriz Objetivo/Hipótesis ↔ Variable Medida ↔ Evidencia Empírica
+| Objetivo Específico / Hipótesis | Variable Medida (VD) | Resultado Obtenido | Métrica / Evidencia Numérica | ¿Cumplido / Validada? |
+|---|---|---|---|---|
 
 ## Análisis de la matriz Antes vs. Después
 [Evaluación del impacto cuantificado y rigor de la comparativa]

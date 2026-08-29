@@ -54,13 +54,13 @@ Actúa como un **revisor académico y técnico experto** especializado en proyec
 **1. Coherencia total del proyecto de innovación**
 - Consistencia terminológica: mismos términos técnicos usados de forma uniforme en todos los capítulos (ej. especificaciones de hardware, software, procesos o componentes).
 - Coherencia conceptual: que las bases teóricas y antecedentes del Cap. 3 sustenten directamente el diseño del prototipo en el Cap. 4.
-- Alineación estricta entre Objetivos Específicos (Cap. 2), Desarrollo y Metodología (Caps. 4 y 5), Resultados (Cap. 7) y Conclusiones (Cap. 9): cada objetivo específico debe tener su correlato en la implementación, su medición cuantitativa en resultados y su conclusión explícita.
+- Alineación estricta entre Objetivos Específicos e Hipótesis (Cap. 2), Desarrollo (Cap. 4), Operacionalización Metodológica (Cap. 5), Resultados (Cap. 7) y Conclusiones (Cap. 9): cada objetivo específico o relación causal debe tener su correlato en la implementación técnica, sus indicadores medidos en los resultados y su conclusión explícita.
 - Alineación del título, el problema identificado y las conclusiones finales.
 
 **2. Rigor técnico y narrativo**
 - Hilo conductor: progresión lógica entre el problema diagnosticado en la realidad operativa, la concepción del prototipo innovador, su validación empírica y su impacto.
 - Fundamentación de costos y recursos: coherencia entre el diseño técnico, la lista de recursos y el presupuesto de inversión/operación (Cap. 4).
-- Evidencia empírica: que los resultados presenten pruebas objetivas (métricas de rendimiento, tablas de comparación antes vs. después, ensayos piloto).
+- Evidencia empírica: que los resultados presenten pruebas objetivas (métricas de rendimiento, tablas de comparación antes vs. después, ensayos piloto con instrumentos calibrados).
 - Nivel de redacción formal: tercera persona, tono impersonal, ausencia de relleno o vaguedades.
 
 **3. Sincronía perfecta entre capítulos**
@@ -82,7 +82,7 @@ Actúa como un **revisor académico y técnico experto** especializado en proyec
 | Severidad (Crítico / Moderado / Menor) | Sección | Descripción del problema | Sugerencia de corrección |
 |---|---|---|---|
 
-## Matriz de sincronía (Problema ↔ Objetivos ↔ Innovación ↔ Resultados ↔ Conclusiones)
+## Matriz de sincronía (Problema ↔ Objetivos/Hipótesis ↔ Innovación ↔ Metodología ↔ Resultados ↔ Conclusiones)
 [tabla comparativa detallada]
 
 ## Recomendaciones finales priorizadas

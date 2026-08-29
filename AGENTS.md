@@ -82,7 +82,9 @@ proyecto-grado-innovacion/
 ├── scripts/                                # Scripts de utilidad y validación de calidad
 │   └── verificar_tablas.py                 # Auditoría de tablas APA 7 y prevención de desbordamientos
 ├── imagenes/                               # Gráficos, diagramas y logotipos
-│   └── README.md                           # Instrucciones para la gestión de recursos gráficos
+│   ├── README.md                           # Instrucciones para la gestión de recursos gráficos
+│   ├── figura_ejemplo.tex                  # Plantilla modular de figura bajo APA 7
+│   └── diagrama_proceso_ejemplo.png        # Diagrama de flujo técnico en alta resolución (300 DPI)
 ├── bibliografia/                           # Bibliografía BibLaTeX (APA 7ma Edición)
 │   └── referencias.bib                     # Base de datos de referencias (.bib) formateada en APA 7
 ├── anexos/                                 # Apéndices del documento
@@ -217,6 +219,14 @@ Este proyecto está configurado para la modalidad de **Innovación Tecnológica*
   - `\notafigura{...}`: Formato estandarizado para notas y fuentes al pie de figuras e ilustraciones bajo APA 7ma Edición (espaciado `\espacionotafigura`).
   - `\incluirfigura[ancho]{archivo}{Título}{etiqueta}{Nota}`: Macro de alto nivel para inserción estandarizada de ilustraciones con estructura APA 7.
   - `\titulocaratula{...}` y `\subtitulocaratula{...}`: Formato tipográfico y paleta institucional en la portada oficial.
+
+### 14. Metodología de la Investigación Aplicada (I+D Tecnológica)
+* **REGLA:** El proyecto se estructura bajo el paradigma de **Investigación Aplicada y Desarrollo Tecnológico (I+D)** con diseño pre-experimental (diagnóstico $\rightarrow$ diseño $\rightarrow$ validación empírica $\rightarrow$ contraste antes vs. después):
+  - **Operacionalización de Variables:** Identificar con claridad la **Variable Independiente (VI)** (la solución técnica/prototipo en Cap. 4) y las **Variables Dependientes (VD)** (efectos e impactos medibles: eficiencia, tiempos, costos, tasa de fallas, calidad en Cap. 5 y 7).
+  - **Instrumentación y Calibración:** Los instrumentos técnicos de medición (sensores, multímetros, balanzas, probetas) deben especificar margen de tolerancia ($\pm\,\%$, resolución), especificaciones del fabricante o calibración; los instrumentos cualitativos (encuestas, entrevistas) deben indicar su criterio de validación o prueba previa.
+  - **Muestreo:** Distinguir entre muestra de personas (usuarios, productores, docentes) y unidades experimentales de prueba técnica (lotes de producción, ciclos de operación, réplicas de ensayo).
+  - **Hipótesis Tecnológica (Opcional):** Si el tutor o tribunal lo solicita, formular una hipótesis con relación causa-efecto contrastable con datos cuantitativos en el Capítulo 7 y con cierre explícito en el Capítulo 9.
+  - **Matriz de Sincronía Transversal de 5 Ejes:** Auditar con el prompt 10 la alineación: *Cap. 2 (Problema/Obj/Hipótesis) ↔ Cap. 4 (Innovación/VI) ↔ Cap. 5 (Método/Instrumentos) ↔ Cap. 7 (Resultados/VD) ↔ Cap. 9 (Conclusiones)*.
 
 ---
 
