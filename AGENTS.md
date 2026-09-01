@@ -97,7 +97,8 @@ proyecto-grado-innovacion/
 │   └── anexo_c_codigo_fuente.tex           # Anexo C: Código fuente importado (\seccionanexo)
 ├── promts/                                 # Prompts de apoyo y guías de revisión para agentes de IA
 │   ├── migracion/                          # Prompts para migración de datos y llenado de fichas
-│   │   └── ficha-proyecto.md               # Flujo paso a paso para completar ficha y redactar capítulos
+│   │   ├── ficha-proyecto.md               # Flujo paso a paso para completar ficha y redactar capítulos
+│   │   └── copiar-documento.md             # Flujo para copia literal y directa sin modificar contenido
 │   └── revicion/                           # Flujo de revisión por etapas y análisis global (9 capítulos)
 │       ├── 00_README_flujo_revision.md     # Guía del flujo de revisión por etapas
 │       ├── 00_analisis-capitulos-tesis.md  # Prompt de análisis integral de coherencia y rigor
@@ -197,7 +198,7 @@ Este proyecto está configurado para la modalidad de **Innovación Tecnológica*
 * Los metadatos institucionales y del estudiante deben ajustarse en `estilos/configuracion.tex`.
 
 ### 10. Uso de Prompts de Apoyo para Agentes (`promts/`)
-* **Migración y redacción:** Consultar `promts/migracion/ficha-proyecto.md` para el flujo ordenado de ingesta de datos a la ficha y posterior redacción capítulo a capítulo.
+* **Migración y redacción:** Consultar `promts/migracion/ficha-proyecto.md` para el flujo ordenado de ingesta de datos a la ficha y posterior redacción capítulo a capítulo, o `promts/migracion/copiar-documento.md` para la migración directa y literal de textos sin modificar contenido.
 * **Revisión y calidad:** Utilizar la suite especializada de 16 prompts en `promts/revicion/` adaptada a los 9 capítulos de Innovación Tecnológica (BTH RM 0912/2023): estructura general (`01`), capítulo 1 (`01b`), capítulos 2 al 9 modulares (`02` a `09`), auditoría de sincronía global (`10`), estilo y gramática (`11`), citas y bibliografía APA 7 (`12`), y checklist pre-entrega/defensa (`13`).
 
 ### 11. Formato de Números, Decimales y Separador de Miles (Norma SI/ISO 80000-1)
