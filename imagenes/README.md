@@ -10,7 +10,9 @@ En este directorio se almacenan todas las imágenes, diagramas, esquemas, planos
 imagenes/
 ├── README.md                          # Guía de uso y normas APA 7 (este archivo)
 ├── figura_ejemplo.tex                 # Plantilla modular de figura en LaTeX
-└── diagrama_proceso_ejemplo.png       # Diagrama de flujo de alta resolución (300 DPI)
+├── diagrama_proceso_ejemplo.png       # Diagrama de flujo de alta resolución (300 DPI)
+├── marco_portada_bth.png               # Marco decorativo perimetral azul de la portada BTH
+└── logo_bth.png                        # Logotipo institucional oficial del Módulo San Julián
 ```
 
 ---

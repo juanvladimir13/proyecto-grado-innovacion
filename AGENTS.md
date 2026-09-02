@@ -97,6 +97,7 @@ proyecto-grado-innovacion/
 │   └── anexo_c_codigo_fuente.tex           # Anexo C: Código fuente importado (\seccionanexo)
 ├── promts/                                 # Prompts de apoyo y guías de revisión para agentes de IA
 │   ├── migracion/                          # Prompts para migración de datos y llenado de fichas
+│   │   ├── crear-contexto.md               # Generación y sincronización de archivos de contexto Markdown
 │   │   ├── ficha-proyecto.md               # Flujo paso a paso para completar ficha y redactar capítulos
 │   │   └── copiar-documento.md             # Flujo para copia literal y directa sin modificar contenido
 │   └── revicion/                           # Flujo de revisión por etapas y análisis global (9 capítulos)
@@ -198,8 +199,11 @@ Este proyecto está configurado para la modalidad de **Innovación Tecnológica*
 * Los metadatos institucionales y del estudiante deben ajustarse en `estilos/configuracion.tex`.
 
 ### 10. Uso de Prompts de Apoyo para Agentes (`promts/`)
-* **Migración y redacción:** Consultar `promts/migracion/ficha-proyecto.md` para el flujo ordenado de ingesta de datos a la ficha y posterior redacción capítulo a capítulo, o `promts/migracion/copiar-documento.md` para la migración directa y literal de textos sin modificar contenido.
-* **Revisión y calidad:** Utilizar la suite especializada de 16 prompts en `promts/revicion/` adaptada a los 9 capítulos de Innovación Tecnológica (BTH RM 0912/2023): estructura general (`01`), capítulo 1 (`01b`), capítulos 2 al 9 modulares (`02` a `09`), auditoría de sincronía global (`10`), estilo y gramática (`11`), citas y bibliografía APA 7 (`12`), y checklist pre-entrega/defensa (`13`).
+* **Migración y redacción (`promts/migracion/`):**
+  - `crear-contexto.md`: Generación y sincronización de los archivos de contexto Markdown en la raíz (`AGENTS.md`, `GLOSARIO.md`, `ESTILO.md`, `ESTADO.md`, `METODOLOGIA.md`).
+  - `ficha-proyecto.md`: Flujo interactivo paso a paso para recopilación estructurada de datos crudos en la ficha intermedia y posterior redacción fundamentada de los 9 capítulos.
+  - `copiar-documento.md`: Flujo para la migración directa y literal (verbatim) de textos desde `docs/proyecto.rtf` o `docs/proyecto.md` a la estructura LaTeX modular sin modificar redacción.
+* **Revisión y calidad (`promts/revicion/`):** Suite especializada de 16 prompts adaptada a los 9 capítulos de Innovación Tecnológica (BTH RM 0912/2023): estructura general (`01`), capítulo 1 (`01b`), capítulos 2 al 9 modulares (`02` a `09`), auditoría de sincronía global (`10`), estilo y gramática (`11`), citas y bibliografía APA 7 (`12`), y checklist pre-entrega/defensa (`13`).
 
 ### 11. Formato de Números, Decimales y Separador de Miles (Norma SI/ISO 80000-1)
 * **REGLA:** En todo el proyecto (capítulos, tablas y anexos) se sigue la convención internacional técnica y de la RAE:

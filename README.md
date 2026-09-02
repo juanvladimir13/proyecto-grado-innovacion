@@ -70,7 +70,9 @@ proyecto-grado-innovacion/
 │   └── anexo_c_codigo_fuente.tex           # Anexo C: Código fuente importado (\seccionanexo)
 ├── promts/                                 # Prompts de apoyo para redacción y revisión con IA
 │   ├── migracion/                          # Prompts para recopilación y redacción de capítulos
-│   │   └── ficha-proyecto.md               # Flujo estructurado paso a paso
+│   │   ├── crear-contexto.md               # Generación y sincronización de archivos de contexto Markdown
+│   │   ├── ficha-proyecto.md               # Flujo estructurado paso a paso para completar ficha y redactar
+│   │   └── copiar-documento.md             # Flujo para copia literal directa del documento fuente
 │   └── revicion/                           # Set de prompts para revisión académica por etapas
 │       ├── 00_README_flujo_revision.md     # Guía del flujo de revisión
 │       ├── 00_analisis-capitulos-tesis.md  # Prompt de análisis global de coherencia
