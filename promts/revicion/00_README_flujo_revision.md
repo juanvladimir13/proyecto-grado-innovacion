@@ -1,6 +1,6 @@
 # Flujo de Revisión Académica — Innovación Tecnológica (BTH)
 
-Este set de **16 prompts** está diseñado para evaluar y perfeccionar el proyecto de grado en la modalidad de **Innovación Tecnológica** por etapas modulares, respetando la estructura de **9 capítulos** normada por el Reglamento de Graduación del Bachillerato Técnico Humanístico (RM 0912/2023).
+Este set de **17 prompts** está diseñado para evaluar y perfeccionar el proyecto de grado en la modalidad de **Innovación Tecnológica** por etapas modulares, respetando la estructura de **9 capítulos** normada por el Reglamento de Graduación del Bachillerato Técnico Humanístico (RM 0912/2023).
 
 ---
 
@@ -23,6 +23,7 @@ Este set de **16 prompts** está diseñado para evaluar y perfeccionar el proyec
 | 11 | `11_revision_redaccion_estilo_academico.md` | Registro formal, redacción impersonal en tercera persona y normas APA 7 | Redacción de todos los capítulos |
 | 12 | `12_revision_citas_bibliografia.md` | Correspondencia de citas parentéticas/narrativas con `referencias.bib` | `bibliografia/` y citas en texto |
 | 13 | `13_checklist_pre_entrega_final.md` | Verificación final exhaustiva antes de impresión y defensa de grado | Documento final y compilación PDF |
+| 14 | `14_revision_humanizacion_redaccion.md` | Detección y corrección de patrones artificiales de IA, naturalidad de voz estudiantil | Redacción de todos los capítulos |
 
 ---
 

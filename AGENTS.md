@@ -203,7 +203,7 @@ Este proyecto está configurado para la modalidad de **Innovación Tecnológica*
   - `crear-contexto.md`: Generación y sincronización de los archivos de contexto Markdown en la raíz (`AGENTS.md`, `GLOSARIO.md`, `ESTILO.md`, `ESTADO.md`, `METODOLOGIA.md`).
   - `ficha-proyecto.md`: Flujo interactivo paso a paso para recopilación estructurada de datos crudos en la ficha intermedia y posterior redacción fundamentada de los 9 capítulos.
   - `copiar-documento.md`: Flujo para la migración directa y literal (verbatim) de textos desde `docs/proyecto.rtf` o `docs/proyecto.md` a la estructura LaTeX modular sin modificar redacción.
-* **Revisión y calidad (`promts/revicion/`):** Suite especializada de 16 prompts adaptada a los 9 capítulos de Innovación Tecnológica (BTH RM 0912/2023): estructura general (`01`), capítulo 1 (`01b`), capítulos 2 al 9 modulares (`02` a `09`), auditoría de sincronía global (`10`), estilo y gramática (`11`), citas y bibliografía APA 7 (`12`), y checklist pre-entrega/defensa (`13`).
+* **Revisión y calidad (`promts/revicion/`):** Suite especializada de 17 prompts adaptada a los 9 capítulos de Innovación Tecnológica (BTH RM 0912/2023): estructura general (`01`), capítulo 1 (`01b`), capítulos 2 al 9 modulares (`02` a `09`), auditoría de sincronía global (`10`), estilo y gramática (`11`), citas y bibliografía APA 7 (`12`), checklist pre-entrega/defensa (`13`) y humanización de redacción (`14`).
 
 ### 11. Formato de Números, Decimales y Separador de Miles (Norma SI/ISO 80000-1)
 * **REGLA:** En todo el proyecto (capítulos, tablas y anexos) se sigue la convención internacional técnica y de la RAE:
