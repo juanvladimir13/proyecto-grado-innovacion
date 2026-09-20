@@ -3,7 +3,7 @@
 Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consistencia, modularidad y cumplimiento de la normativa del Bachillerato Técnico Humanístico (BTH - RM 0912/2023) en Bolivia bajo la modalidad de **Innovación Tecnológica**.
 
 > [!IMPORTANT]
-> Consulta siempre la especificación principal en [AGENTS.md](AGENTS.md) y la estructura de capítulos en [ESTRUCTURA_CAPITULOS.md](ESTRUCTURA_CAPITULOS.md) antes de crear o modificar archivos.
+> Consulta siempre la especificación principal en [AGENTS.md](AGENTS.md), la matriz de estado en [ESTADO.md](ESTADO.md), el [GLOSARIO.md](GLOSARIO.md), la guía de [ESTILO.md](ESTILO.md), el marco de [METODOLOGIA.md](METODOLOGIA.md) y la estructura de capítulos en [ESTRUCTURA_CAPITULOS.md](ESTRUCTURA_CAPITULOS.md) antes de crear o modificar archivos.
 
 ---
 
@@ -11,7 +11,7 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
 
 1. **Variables Centralizadas:**
    - **NUNCA** quemes nombres de autores, tutores, institución, especialidad o título en archivos `.tex` (`caratula.tex` o capítulos).
-   - Toda modificación de metadatos, espaciado de párrafos (`\espacioposteriorparrafo`, `\sangriaprimeralinea`), diagramación (`\espaciosuperiordedicatoria`), figuras (`\anchuraimagenpredeterminada`, `\estilorotuloapa`) y portada (`\activarmarcobth`, `\rutamarcobth`, `\rutalogobth`, `\formulagradobth`) se realiza en [estilos/configuracion.tex](estilos/configuracion.tex). Soporta 1 o 2 autores dinámicamente (`\autoruno`, `\autordos`).
+   - Toda modificación de metadatos, espaciado de párrafos (`\espacioposteriorparrafo`, `\sangriaprimeralinea`), diagramación (`\espaciosuperiordedicatoria`), figuras (`\anchuraimagenpredeterminada`, `\estilorotuloapa`) y portada (`\activarmarcobth`, `\rutamarcobth`, `\rutalogobth`, `\formulagradobth`) se realiza en [estilos/configuracion.tex](estilos/configuracion.tex). Soporta 1 o 2 autores dinámicamente (`\autoruno{Estudiante 1}`, `\autordos{Estudiante 2}`).
    - Los campos de C.I. del estudiante fueron removidos y no forman parte de la plantilla.
 
 2. **Estructura Modular de Capítulos (Innovación Tecnológica):**
@@ -56,26 +56,27 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
 8. **Control de Silabación:**
    - División de palabras desactivada globalmente (`\hyphenpenalty=10000`, `\exhyphenpenalty=10000`).
 
-9. **Compilación y Limpieza:**
-   - Usar siempre el script ejecutable [compilar.sh](compilar.sh):
-     * `./compilar.sh` (compilación completa de 4 pasos).
-     * `./compilar.sh --clean` (compilación completa + eliminación de temporales).
-     * `./compilar.sh --fast` (compilación rápida de 1 sola pasada pdflatex).
-     * `./compilar.sh --only-clean` (limpieza de temporales sin compilar).
-     * `./compilar.sh --check-tablas` (auditoría de tablas APA 7 y diagramación).
+9. **Compilación y Limpieza Multiplataforma:**
+   - Usar siempre los scripts ejecutables provistos:
+     * **Linux / macOS:** `./compilar.sh` (`--fast`, `--clean`, `--only-clean`, `--check-tablas`).
+     * **Windows PowerShell:** `.\compilar.ps1` (`-Fast`, `-Clean`, `-OnlyClean`, `-CheckTablas`).
+     * **Windows CMD:** `compilar.bat` (wrapper interactivo por lotes).
 
-10. **Modalidad y Ensamble:**
+10. **Modalidad y Contexto del Proyecto:**
     - Modalidad activa: **Innovación Tecnológica** (Capítulos 1 al 9).
+    - Proyecto activo: *SISTEMA WEB DE INSCRIPCIÓN PARA EL MÓDULO TECNOLÓGICO PRODUCTIVO SAN JULIÁN BTH* (Sistemas Informáticos, Técnico Medio).
+    - Autores: **Estudiante 1** y **Estudiante 2** | Tutor: **Ing. Juan Vladimir Ramirez Flores** | Gestión: **2026**.
     - Ensamble raíz en [main.tex](main.tex) vía `\input{capitulos/index.tex}`.
     - Metadatos institucionales y del estudiante centralizados en [estilos/configuracion.tex](estilos/configuracion.tex).
-    - Ficha de datos del proyecto en [docs/ficha-proyecto.md](docs/ficha-proyecto.md) (alimentada desde `docs/proyecto.rtf` o `docs/proyecto.md` y consultas interactivas).
+    - Ficha de datos del proyecto en [docs/ficha-proyecto.md](docs/ficha-proyecto.md).
     - Preliminares: [agradecimiento.tex](preliminares/agradecimiento.tex) y [dedicatoria.tex](preliminares/dedicatoria.tex) utilizan el entorno `\begin{estilodedicatoria}{Título}` (alineado a la parte inferior en una misma hoja, sin separación entre título y contenido, con registro automático en el TOC).
     - Resúmenes en [preliminares/resumen.tex](preliminares/resumen.tex) formatean palabras clave con `\palabrasclave{...}`, `\keywords{...}` y `\simikuna{...}`.
     - Portada oficial BTH modular en [preliminares/caratula.tex](preliminares/caratula.tex) invocando `\imprimircaratulabth` (estilos encapsulados en [estilos/caratula.sty](estilos/caratula.sty), marco decorativo perimetral azul gobernado por `\activarmarcobth`).
 
-11. **Prompts de Apoyo (`promts/`):**
+11. **Archivos de Contexto y Prompts de Apoyo (`promts/`):**
+    - Sincronizar el trabajo con los archivos de contexto en raíz: [ESTADO.md](ESTADO.md), [GLOSARIO.md](GLOSARIO.md), [ESTILO.md](ESTILO.md) y [METODOLOGIA.md](METODOLOGIA.md).
     - Guiar la redacción con [promts/migracion/ficha-proyecto.md](promts/migracion/ficha-proyecto.md).
-    - Revisar consistencia y rigor académico con la suite de 16 prompts modulares en [promts/revicion/](promts/revicion/) adaptada a los 9 capítulos de Innovación Tecnológica (BTH RM 0912/2023).
+    - Revisar consistencia y rigor académico con la suite de 17 prompts modulares en [promts/revicion/](promts/revicion/) (00 a 14, incluyendo humanización de redacción) adaptada a los 9 capítulos de Innovación Tecnológica (BTH RM 0912/2023).
 
 12. **Formato de Números, Decimales y Separador de Miles (Norma SI/ISO 80000-1):**
     - **Parte decimal:** Usar obligatoriamente punto (`.`) (ej. `12.50`, `3.1416`, `98.5%`, `0.75`). **PROHIBIDO** el uso de coma (`,`) en decimales.

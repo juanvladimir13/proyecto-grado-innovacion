@@ -62,18 +62,18 @@ capitulos/
 
 > Estos datos alimentan `estilos/configuracion.tex`, la carátula y las páginas preliminares.
 
-- **Nombre de la institución educativa:** [DATO PENDIENTE]
-- **Departamento / Provincia / Localidad:** [DATO PENDIENTE]
-- **Programa o carrera:** [DATO PENDIENTE] _(ej. "Programa de Innovación Tecnológica")_
-- **Título del proyecto de grado:** [DATO PENDIENTE]
-- **Subtítulo o nombre comercial del producto/servicio:** [DATO PENDIENTE]
-- **Nombre(s) completo(s) del/los autor(es):** [DATO PENDIENTE]
+- **Nombre de la institución educativa:** MÓDULO TECNOLÓGICO PRODUCTIVO SAN JULIÁN
+- **Departamento / Provincia / Localidad:** Santa Cruz -- Bolivia / San Julián (Distrito Educativo San Julián)
+- **Programa o carrera:** SISTEMAS INFORMÁTICOS (Nivel Técnico Medio)
+- **Título del proyecto de grado:** SISTEMA WEB DE INSCRIPCIÓN PARA EL MÓDULO TECNOLÓGICO PRODUCTIVO SAN JULIÁN BTH
+- **Subtítulo o nombre comercial del producto/servicio:** Sistema Web de Inscripción MTP San Julián
+- **Nombre(s) completo(s) del/los autor(es):** Estudiante 1 y Estudiante 2
 - **Correo electrónico del autor:** [DATO PENDIENTE]
-- **Nombre completo del tutor/asesor:** [DATO PENDIENTE]
-- **Grado académico y cargo del tutor:** [DATO PENDIENTE] _(ej. "Lic. en Ingeniería, Docente de Física")_
-- **Ciudad y país de presentación:** [DATO PENDIENTE] _(ej. "La Paz, Bolivia")_
-- **Fecha de presentación (mes y año):** [DATO PENDIENTE] _(ej. "Diciembre 2026")_
-- **Gestión académica:** [DATO PENDIENTE] _(ej. "Gestión 2026")_
+- **Nombre completo del tutor/asesor:** Ing. Juan Vladimir Ramirez Flores
+- **Grado académico y cargo del tutor:** Ingeniero de Sistemas, Tutor Guía
+- **Ciudad y país de presentación:** Santa Cruz -- Bolivia
+- **Fecha de presentación (mes y año):** Gestión 2026
+- **Gestión académica:** 2026
 
 ### Páginas preliminares
 

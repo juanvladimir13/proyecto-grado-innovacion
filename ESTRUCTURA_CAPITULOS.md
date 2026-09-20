@@ -2,6 +2,11 @@
 
 Este documento describe a detalle el contenido, propósito y archivos fuente de cada uno de los **9 capítulos** de la modalidad de **Innovación Tecnológica** en este proyecto LaTeX, en estricto cumplimiento del Reglamento de Graduación del Bachillerato Técnico Humanístico (BTH, RM 0912/2023) en Bolivia.
 
+> **Proyecto:** *SISTEMA WEB DE INSCRIPCIÓN PARA EL MÓDULO TECNOLÓGICO PRODUCTIVO SAN JULIÁN BTH*  
+> **Especialidad:** Sistemas Informáticos (Técnico Medio) | **Gestión:** 2026  
+> **Autores:** Estudiante 1 y Estudiante 2 | **Tutor:** Ing. Juan Vladimir Ramirez Flores  
+> **Documentos de soporte:** Matriz de avance en [ESTADO.md](ESTADO.md), vocabulario en [GLOSARIO.md](GLOSARIO.md), estilo en [ESTILO.md](ESTILO.md) y marco en [METODOLOGIA.md](METODOLOGIA.md).
+
 Todos los archivos fuente de los capítulos se encuentran en el directorio `capitulos/` y se ensamblan modularmente a través de `capitulos/index.tex`.
 
 ---

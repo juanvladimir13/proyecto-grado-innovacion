@@ -14,7 +14,13 @@ proyecto-grado-innovacion/
 ├── README.md                               # Guía general de uso y comandos de compilación (este archivo)
 ├── AGENTS.md                               # Directrices y normas para agentes de IA
 ├── ESTRUCTURA_CAPITULOS.md                 # Detalle temático de los 9 capítulos de Innovación Tecnológica
-├── compilar.sh                             # Script de compilación y limpieza (soporta --clean, --fast, etc.)
+├── ESTADO.md                               # Matriz de seguimiento, completitud y control de avance de archivos
+├── GLOSARIO.md                             # Glosario técnico y normativo unificado del proyecto
+├── ESTILO.md                               # Guía editorial, tiempos verbales y estilo académico APA 7
+├── METODOLOGIA.md                          # Marco metodológico de referencia transversal (I+D Tecnológica)
+├── compilar.sh                             # Script ejecutable de compilación (pdflatex + biber) en Linux/macOS
+├── compilar.ps1                            # Script de compilación y limpieza en Windows PowerShell
+├── compilar.bat                            # Script de ejecución rápida por lotes en Windows CMD
 ├── estilos/                                # Paquete y configuraciones de diseño de LaTeX
 │   ├── estilos.sty                         # Archivo de estilos (márgenes, fuentes, espaciados y paquetes)
 │   ├── configuracion.tex                   # Metadatos centralizados (título, autor(es), tutor, institución, modalidad)
@@ -76,7 +82,7 @@ proyecto-grado-innovacion/
 │   └── revicion/                           # Set de prompts para revisión académica por etapas
 │       ├── 00_README_flujo_revision.md     # Guía del flujo de revisión
 │       ├── 00_analisis-capitulos-tesis.md  # Prompt de análisis global de coherencia
-│       └── 01_ a 13_*.md                   # Prompts de revisión modular (9 capítulos) y checklist pre-defensa
+│       └── 01_ a 14_*.md                   # Prompts de revisión modular (9 capítulos), checklist y humanización
 └── docs/                                   # Regulaciones oficiales y documentos de soporte
     ├── REGLAMENTO_BTH__RM_0912_2023.pdf    # Reglamento oficial de graduación BTH (RM 0912/2023)
     ├── ficha-proyecto.md                   # Ficha de datos y requerimientos del proyecto

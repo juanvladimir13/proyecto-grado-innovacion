@@ -6,8 +6,13 @@ Este archivo define la estructura, reglas y flujos de trabajo del proyecto para 
 
 ### 📋 Resumen del Proyecto
 
-* **Nombre:** Proyecto de Grado BTH - Innovación Tecnológica (LaTeX Modular)
-* **Objetivo:** Plantilla modular y parametrizada en LaTeX para la redacción de proyectos de grado y tesis académicas bajo la modalidad de Innovación Tecnológica.
+* **Nombre de la Plantilla:** Proyecto de Grado BTH - Innovación Tecnológica (LaTeX Modular)
+* **Título del Proyecto:** SISTEMA WEB DE INSCRIPCIÓN PARA EL MÓDULO TECNOLÓGICO PRODUCTIVO SAN JULIÁN BTH
+* **Especialidad Técnica:** Sistemas Informáticos (Técnico Medio)
+* **Institución:** Módulo Tecnológico Productivo San Julián (Distrito Educativo San Julián, Santa Cruz -- Bolivia)
+* **Autores:** Estudiante 1 y Estudiante 2
+* **Tutor Guía:** Ing. Juan Vladimir Ramirez Flores
+* **Gestión Académica:** 2026
 * **Normativa:** Cumple con el Reglamento de Graduación del Bachillerato Técnico Humanístico (BTH) en Bolivia (Resolución Ministerial RM 0912/2023, ver [docs/REGLAMENTO_BTH__RM_0912_2023.pdf](docs/REGLAMENTO_BTH__RM_0912_2023.pdf)).
 * **Modalidad Implementada:** **Innovación Tecnológica** estructurada en 9 capítulos dentro del directorio `capitulos/`.
 
@@ -41,7 +46,13 @@ proyecto-grado-innovacion/
 ├── README.md                               # Guía del usuario para compilar y usar la plantilla
 ├── AGENTS.md                               # Instrucciones y reglas para Agentes de IA (este archivo)
 ├── ESTRUCTURA_CAPITULOS.md                 # Detalle temático de los 9 capítulos de Innovación Tecnológica
-├── compilar.sh                             # Script ejecutable de compilación (pdflatex + biber) y limpieza
+├── ESTADO.md                               # Matriz de seguimiento, completitud y control de avance de archivos
+├── GLOSARIO.md                             # Glosario técnico y normativo unificado del proyecto
+├── ESTILO.md                               # Guía editorial, tiempos verbales y estilo académico APA 7
+├── METODOLOGIA.md                          # Marco metodológico de referencia transversal (I+D Tecnológica)
+├── compilar.sh                             # Script ejecutable de compilación (pdflatex + biber) en Linux/macOS
+├── compilar.ps1                            # Script de compilación y limpieza en Windows PowerShell
+├── compilar.bat                            # Script de ejecución rápida por lotes en Windows CMD
 ├── estilos/
 │   ├── estilos.sty                         # Estilos, carga de paquetes (biblatex-apa, listings), títulos APA 7
 │   ├── configuracion.tex                   # Variables centralizadas de autor(es), título, tutor, institución y modalidad
@@ -116,7 +127,8 @@ proyecto-grado-innovacion/
 │       ├── 10_revision_coherencia_sincronia_global.md # Sincronía integral entre los 9 capítulos
 │       ├── 11_revision_redaccion_estilo_academico.md # Registro impersonal y estilo APA 7
 │       ├── 12_revision_citas_bibliografia.md # Normalización BibLaTeX APA 7ma Edición
-│       └── 13_checklist_pre_entrega_final.md # Checklist institucional BTH pre-defensa
+│       ├── 13_checklist_pre_entrega_final.md # Checklist institucional BTH pre-defensa
+│       └── 14_revision_humanizacion_redaccion.md # Naturalización y humanización de redacción
 └── docs/                                   # Regulaciones oficiales y guías
     ├── REGLAMENTO_BTH__RM_0912_2023.pdf    # Reglamento Ministerial oficial RM 0912/2023
     ├── ficha-proyecto.md                   # Ficha de datos y requerimientos del proyecto
@@ -184,12 +196,11 @@ proyecto-grado-innovacion/
 * **Código en Línea:** Usar `\lstinline|codigo|` o `\texttt{codigo}`.
 
 ### 8. Compilación y Limpieza
-* **REGLA:** Utilizar exclusivamente el script ejecutable `./compilar.sh` en lugar de comandos manuales aislados:
-  - `./compilar.sh` (compila PDF completo ejecutando `pdflatex` + `biber` + 2x `pdflatex` y conserva temporales).
-  - `./compilar.sh --clean` (compila PDF completo y elimina archivos temporales).
-  - `./compilar.sh --only-clean` (elimina archivos temporales sin compilar).
-  - `./compilar.sh --fast` (compilación rápida de 1 sola pasada pdflatex para redacción continua).
-  - `./compilar.sh --check-tablas` (audita la conformidad de tablas con APA 7 y booktabs).
+* **REGLA:** Utilizar exclusivamente los scripts de compilación automatizados provistos en lugar de comandos manuales aislados:
+  - **Linux / macOS:** `./compilar.sh` (soporta `--fast`, `--clean`, `--only-clean`, `--check-tablas`).
+  - **Windows PowerShell:** `.\compilar.ps1` (soporta `-Fast`, `-Clean`, `-OnlyClean`, `-CheckTablas`).
+  - **Windows CMD:** `compilar.bat` (wrapper interactivo por lotes).
+  - La compilación completa ejecuta `pdflatex` + `biber` + 2x `pdflatex` garantizando la resolución de citas APA 7, tablas y referencias cruzadas.
 
 ### 9. Estructura y Flujo de la Modalidad Innovación Tecnológica
 Este proyecto está configurado para la modalidad de **Innovación Tecnológica**:
@@ -198,7 +209,12 @@ Este proyecto está configurado para la modalidad de **Innovación Tecnológica*
 * Para alimentar el contenido con datos de un proyecto real, se completa la ficha `docs/ficha-proyecto.md` a partir del documento base `docs/proyecto.rtf` o `docs/proyecto.md`, consultando de manera interactiva los datos pendientes al usuario.
 * Los metadatos institucionales y del estudiante deben ajustarse en `estilos/configuracion.tex`.
 
-### 10. Uso de Prompts de Apoyo para Agentes (`promts/`)
+### 10. Uso de Archivos de Contexto y Prompts de Apoyo (`promts/`)
+* **Archivos de Contexto Activos en la Raíz:**
+  - `ESTADO.md`: Matriz de control, seguimiento y completitud de cada archivo, tabla y capítulo del proyecto.
+  - `GLOSARIO.md`: Vocabulario técnico, normativo y del dominio (*Sistemas Informáticos / Sistema Web de Inscripción*).
+  - `ESTILO.md`: Guía editorial de redacción académica, tiempos verbales por capítulo, normas APA 7 y convenciones numéricas.
+  - `METODOLOGIA.md`: Marco metodológico transversal I+D, operacionalización de variables (VI/VD), instrumentos y métricas.
 * **Migración y redacción (`promts/migracion/`):**
   - `crear-contexto.md`: Generación y sincronización de los archivos de contexto Markdown en la raíz (`AGENTS.md`, `GLOSARIO.md`, `ESTILO.md`, `ESTADO.md`, `METODOLOGIA.md`).
   - `ficha-proyecto.md`: Flujo interactivo paso a paso para recopilación estructurada de datos crudos en la ficha intermedia y posterior redacción fundamentada de los 9 capítulos.
