@@ -27,35 +27,43 @@
 }
 
 % ============================================================
-% 2. TIPOGRAFÍA Y FORMATO DE BLOQUES INDIVIDUALES
 % ============================================================
+% 2. TIPOGRAFÍA Y FORMATO DE BLOQUES INDIVIDUALES (docs/formato.md)
+% ============================================================
+% 1. Módulo Tecnológico Productivo San Julián (Tamaño 14)
 \newcommand{\institucionportadabth}[1]{%
-    \begin{minipage}{0.80\textwidth}
-        \centering\large\bfseries\setstretch{1.15} #1\par
+    \begin{minipage}{0.85\textwidth}
+        \centering\fontsize{14pt}{17pt}\selectfont\bfseries\setstretch{1.15} #1\par
     \end{minipage}\par
 }
 
-\newcommand{\especialidadportadabth}[1]{{\large\bfseries ``#1''\par}}
+% 2. Nombre de la Carrera (Tamaño 14)
+\newcommand{\especialidadportadabth}[1]{{\fontsize{14pt}{17pt}\selectfont\bfseries ``#1''\par}}
 
+% 4. Título del Proyecto en letra tamaño 14 (no debe exceder de 17 palabras)
 \newcommand{\tituloportadabth}[1]{%
-    \begin{minipage}{0.78\textwidth}
-        \centering\large\bfseries\setstretch{1.2} #1\par
+    \begin{minipage}{0.82\textwidth}
+        \centering\fontsize{14pt}{17pt}\selectfont\bfseries\setstretch{1.2} #1\par
     \end{minipage}\par
 }
 
+% 5. Proyecto para optar el grado Técnico Medio (Tamaño 12)
 \newcommand{\formulagradoportadabth}[1]{%
     \begin{minipage}{0.88\textwidth}
-        \centering\normalsize\setstretch{1.15} #1\par
+        \centering\fontsize{12pt}{15pt}\selectfont\setstretch{1.15} #1\par
     \end{minipage}\par
 }
 
-\newcommand{\etiquetapostulantesbth}[1]{{\normalsize\textbf{#1}\par}}
+% 6. Nombre de los postulantes (Tamaño 12)
+\newcommand{\etiquetapostulantesbth}[1]{{\fontsize{12pt}{15pt}\selectfont\bfseries #1\par}}
 
-\newcommand{\etiquetatutorbth}[1]{{\normalsize\textbf{#1}\par\vspace{-\parskip}}}
+% 7. Nombre del Tutor/a: (Tamaño 12)
+\newcommand{\etiquetatutorbth}[1]{{\fontsize{12pt}{15pt}\selectfont\bfseries #1\par\vspace{-\parskip}}}
 
-\newcommand{\tutorportadabth}[1]{{\normalsize\setstretch{1.0} #1\par}}
+\newcommand{\tutorportadabth}[1]{{\fontsize{12pt}{15pt}\selectfont\setstretch{1.0} #1\par}}
 
-\newcommand{\pieportadabth}[2]{{\normalsize\bfseries\setstretch{1.0} #1\\#2\par}}
+% 8 y 9. Lugar y Año (Tamaño 12)
+\newcommand{\pieportadabth}[2]{{\fontsize{12pt}{15pt}\selectfont\bfseries\setstretch{1.1} #1\\#2\par}}
 
 % Macros de compatibilidad tipográfica previa
 \newcommand{\titulocaratula}[1]{\tituloportadabth{#1}}
@@ -71,10 +79,11 @@
     \especialidadportadabth{#2}%
 }
 
-\newcommand{\bloquelogoportada}[2][\alturalogobth]{%
-    \vspace{0.45cm}%
-    \par{\centering\includegraphics[height=#1]{#2}\par}%
-    \vspace{0.5cm}%
+% 3. Logo del BTH San Julián (Tamaño de imagen 6 cm x 4.5 cm)
+\newcommand{\bloquelogoportada}[2][\anchologobth]{%
+    \vspace{0.35cm}%
+    \par{\centering\includegraphics[width=#1,height=\alturalogobth]{#2}\par}%
+    \vspace{0.4cm}%
 }
 
 \newcommand{\bloquetituloportada}[1]{%
@@ -84,11 +93,12 @@
 
 \newcommand{\bloquegradoportada}[1]{%
     \formulagradoportadabth{#1}%
-    \vspace{0.8cm}%
+    \vspace{0.7cm}%
 }
 
 \newcommand{\bloquepostulantesportada}[3]{%
-    \begin{minipage}{0.48\textwidth}
+    \begin{minipage}{0.55\textwidth}
+        \fontsize{12pt}{15pt}\selectfont
         \etiquetapostulantesbth{#1}%
         \vspace{0.15cm}%
         \ifdefempty{#3}{%
@@ -103,12 +113,16 @@
             }%
         }%
     \end{minipage}\par
-    \vspace{0.65cm}%
+    \vspace{0.55cm}%
 }
 
 \newcommand{\bloquetutorportada}[2]{%
-    \etiquetatutorbth{#1}%
-    \tutorportadabth{#2}%
+    \begin{minipage}{0.55\textwidth}
+        \fontsize{12pt}{15pt}\selectfont
+        \etiquetatutorbth{#1}%
+        \vspace{0.10cm}%
+        \tutorportadabth{#2}%
+    \end{minipage}\par
     \vfill
 }
 
@@ -120,13 +134,13 @@
 % ============================================================
 % 4. ENTORNO Y COMANDO GLOBAL DE CARÁTULA
 % ============================================================
-% Entorno que encapsula la geometría (3.0 cm izq/der, 2.5 cm sup/inf),
+% Entorno que encapsula la geometría (docs/formato.md),
 % tipografía Times New Roman (ptm), marco decorativo y centrado.
 \newenvironment{estilocaratulabth}{%
-    \newgeometry{left=3.0cm, right=3.0cm, top=2.5cm, bottom=2.5cm}%
+    \newgeometry{left=\margenizquierdo, right=\margenderecho, top=\margensuperior, bottom=\margeninferior}%
     \begin{titlepage}%
         \renewcommand{\familydefault}{ptm}%
-        \normalfont
+        \fontfamily{ptm}\selectfont
         \insertarmarcobth
         \centering
 }{%

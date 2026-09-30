@@ -26,16 +26,16 @@
 \hbadness=2000
 
 % ============================================================
-% 4. DIMENSIONES DE PÁGINA Y MÁRGENES (Formato Carta BTH)
+% 4. DIMENSIONES DE PÁGINA Y MÁRGENES (docs/formato.md)
 % ============================================================
-% Carta: Izquierdo: 3.0 cm | Derecho, Superior e Inferior: 2.5 cm
+% Carta: Derecho: 3.0 cm | Izquierdo, Superior e Inferior: 2.5 cm
 \RequirePackage{geometry}
 \geometry{
     letterpaper,
-    top=2.5cm,
-    bottom=2.5cm,
-    left=3.0cm,
-    right=2.5cm,
+    top=\margensuperior,
+    bottom=\margeninferior,
+    left=\margenizquierdo,
+    right=\margenderecho,
     headheight=15pt,
     headsep=0pt
 }
@@ -43,10 +43,18 @@
 % ============================================================
 % 5. TIPOGRAFÍA, INTERLINEADO Y ESPACIADO DE PÁRRAFOS
 % ============================================================
-% Arial (helvet) para texto principal, Courier para código
+% Times New Roman 12pt (docs/formato.md), Courier para código
+\RequirePackage{mathptmx}
 \RequirePackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
 \RequirePackage{courier}
+
+\ifdefstring{\tipografiadocumento}{times}{%
+    % Times New Roman (docs/formato.md)
+    \renewcommand{\familydefault}{\rmdefault}
+}{%
+    % Arial / Helvetica
+    \renewcommand{\familydefault}{\sfdefault}
+}
 
 % Interlineado 1.5 en el cuerpo del texto
 \RequirePackage{setspace}
@@ -112,14 +120,23 @@
   {1.27cm}{12pt}{0.5em}
 
 % ============================================================
-% 8. ENCABEZADOS Y PIES DE PÁGINA
+% 8. ENCABEZADOS Y PIES DE PÁGINA (docs/formato.md)
 % ============================================================
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\cfoot{\thepage}
+\rfoot{\thepage} % Numeración de página en la parte inferior derecha
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+
+% Reconfiguración del estilo 'plain' (usado en inicios de capítulo y páginas preliminares)
+% para que también ubique el número de página en la parte inferior derecha
+\fancypagestyle{plain}{%
+    \fancyhf{}%
+    \rfoot{\thepage}%
+    \renewcommand{\headrulewidth}{0pt}%
+    \renewcommand{\footrulewidth}{0pt}%
+}
 
 % ============================================================
 % 9. TABLAS, FIGURAS Y ROTULACIÓN (APA 7)

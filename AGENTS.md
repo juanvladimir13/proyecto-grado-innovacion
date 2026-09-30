@@ -20,13 +20,14 @@ Este archivo define la estructura, reglas y flujos de trabajo del proyecto para 
 
 ## 🛠️ Stack Tecnológico & Formato
 
-* **Motor de Documento:** LaTeX (`report` class).
+* **Motor de Documento:** LaTeX (`report` class, 12pt).
 * **Motor Bibliográfico:** `biblatex` con estilo `apa` (APA 7ma Edición) y backend `biber`, con `csquotes` (`autostyle`).
-* **Tipografía:** Arial (`helvet`) de tamaño `11pt` en cuerpo principal, y Courier (`courier`) para código fuente y texto monoespaciado.
+* **Tipografía:** Times New Roman (`mathptmx`) de tamaño `12pt` en cuerpo principal (conmutable con Arial vía `\tipografiadocumento`), y Courier (`courier`) para código fuente y texto monoespaciado.
 * **Código Fuente y Programación:** Entorno `listings` con sintaxis coloreada, soporte UTF-8 (español), tipografía Courier y estilo predeterminado `estilocodigo`.
 * **Tamaño de Hoja:** Carta (`letterpaper`).
-* **Márgenes:** Izquierdo: 3.0 cm | Derecho, Superior e Inferior: 2.5 cm.
+* **Márgenes:** Derecho: 3.0 cm | Izquierdo, Superior e Inferior: 2.5 cm (centralizados en `estilos/configuracion.tex`).
 * **Interlineado:** 1.5 líneas (`\onehalfspacing`) en párrafos.
+* **Numeración de Página:** En la parte inferior derecha (`\rfoot{\thepage}`); números romanos en preliminares y arábigos a partir de la Introducción.
 * **Espaciado entre Párrafos (Estilo Microsoft Word):** Espaciado posterior configurable (`\espacioposteriorparrafo`, por defecto `8pt`) y sangría de primera línea (`\sangriaprimeralinea`, por defecto `0pt`) centralizados en `estilos/configuracion.tex` y aplicados con el paquete `parskip`.
 * **División de Palabras (Silabación):** Desactivada globalmente (`\hyphenpenalty=10000`, `\exhyphenpenalty=10000`).
 * **Compilación:** Automatizada con el script ejecutable `./compilar.sh` en la raíz (utiliza `pdflatex` y `biber`).
