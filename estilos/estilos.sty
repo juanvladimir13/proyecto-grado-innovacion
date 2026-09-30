@@ -32,7 +32,7 @@
 \RequirePackage{geometry}
 \geometry{
     letterpaper,
-    top=\dimexpr\margensuperior-2.65pt\relax,
+    top=\dimexpr\margensuperior-3.78pt\relax,
     bottom=\margeninferior,
     left=\margenizquierdo,
     right=\margenderecho,
@@ -81,27 +81,27 @@
 % ============================================================
 \RequirePackage{titlesec}
 
-% Nivel 1 (\chapter) - Alineado a la izquierda, Negrita, sin palabra "Capítulo"
+% Nivel 1 (\chapter) - Alineado a la izquierda, Negrita, sin palabra "Capítulo" (12pt)
 \titleformat{\chapter}[block]
-  {\normalfont\Large\bfseries\setstretch{1.0}}
+  {\normalfont\normalsize\bfseries\setstretch{1.0}}
   {\thechapter.}{0.5em}{}
-\titlespacing*{\chapter}{0pt}{-27.35pt}{10pt}
+\titlespacing*{\chapter}{0pt}{-22.47pt}{10pt}
 
-% Nivel 1 sin numerar (Bibliografía, Anexos, Resumen)
+% Nivel 1 sin numerar (Bibliografía, Anexos, Resumen) (12pt)
 \titleformat{name=\chapter,numberless}[block]
-  {\normalfont\Large\bfseries\setstretch{1.0}}
+  {\normalfont\normalsize\bfseries\setstretch{1.0}}
   {}{0pt}{}
-\titlespacing*{name=\chapter,numberless}{0pt}{-27.35pt}{20pt}
+\titlespacing*{name=\chapter,numberless}{0pt}{-22.47pt}{20pt}
 
-% Nivel 2 (\section) - Alineado a la izquierda, Negrita
+% Nivel 2 (\section) - Alineado a la izquierda, Negrita (12pt)
 \titleformat{\section}
-  {\normalfont\large\bfseries\setstretch{1.0}}
+  {\normalfont\normalsize\bfseries\setstretch{1.0}}
   {\thesection}{1em}{}
 \titlespacing*{\section}{0pt}{12pt}{6pt}
 
-% Nivel 3 (\subsection) - Alineado a la izquierda, Negrita y Cursiva
+% Nivel 3 (\subsection) - Alineado a la izquierda, Negrita y Cursiva (12pt)
 \titleformat{\subsection}
-  {\normalfont\large\bfseries\itshape\setstretch{1.0}}
+  {\normalfont\normalsize\bfseries\itshape\setstretch{1.0}}
   {\thesubsection}{1em}{}
 \titlespacing*{\subsection}{0pt}{12pt}{6pt}
 

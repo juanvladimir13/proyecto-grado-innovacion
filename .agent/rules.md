@@ -20,9 +20,9 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
    - Las inclusiones dentro de cada capítulo usan el prefijo `capitulos/` (ej. `\input{capitulos/02_planteamiento_problema/diagnostico}`).
 
 3. **Estilo de Títulos APA 7ma Edición Adaptado:**
-   - Todos los títulos y enlaces internos (TOC, LOF, LOT, referencias) en **negro** (`linkcolor=black`).
+   - Todos los títulos y enlaces internos (TOC, LOF, LOT, referencias) en **negro** (`linkcolor=black`). Niveles 1 al 5 en **12 pt** (`\normalsize`).
    - Interlineado sencillo (`1.0` / `\setstretch{1.0}`) para títulos de Nivel 1 al 4.
-   - Nivel 1 (`\chapter`): Alineado a la **izquierda**, sin prefijo de palabra "Capítulo" (ej. `1. INTRODUCCIÓN`), con espaciado anterior a `-30pt` en `titlesec` para garantizar inicio exacto a 2.5 cm.
+   - Nivel 1 (`\chapter`): Alineado a la **izquierda**, Negrita, tamaño 12 pt (`\normalsize`), sin prefijo de palabra "Capítulo" (ej. `1. INTRODUCCIÓN`), con espaciado anterior calibrado en `titlesec` para garantizar inicio exacto a 2.50 cm.
    - Nivel 2 (`\section`): Alineado a la izquierda, Negrita.
    - Nivel 3 (`\subsection`): Alineado a la izquierda, Negrita y Cursiva.
    - Nivel 4 (`\subsubsection`): Sangría de 1.27 cm, Negrita, tipo *run-in* terminando con punto.

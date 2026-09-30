@@ -153,10 +153,10 @@ proyecto-grado-innovacion/
 * **Rutas Internas:** Los archivos secundarios dentro de cada capítulo deben incluirse con el prefijo `capitulos/` (ej. `\input{capitulos/02_planteamiento_problema/diagnostico}`).
 
 ### 3. Estilos de Títulos y Alineación (Normas APA 7 Adaptadas)
-* **Color:** Todos los títulos y enlaces internos (TOC, LOF, LOT, referencias cruzadas) deben mostrarse en **negro** (`linkcolor=black`).
+* **Color y Tamaño:** Todos los títulos y enlaces internos (TOC, LOF, LOT, referencias cruzadas) en **negro** (`linkcolor=black`). Los títulos de Nivel 1 al 5 utilizan tamaño uniforme de **12 pt** (`\normalsize`).
 * **Interlineado:** Aplicar interlineado sencillo (`1.0`) interno en títulos de Nivel 1 al 4 (`\setstretch{1.0}`) para evitar separaciones excesivas cuando ocupan más de una línea.
-* **Nivel 1 (`\chapter`):** Debe alinearse a la **izquierda**, no debe contener el prefijo de palabra "Capítulo" (ej. `1. INTRODUCCIÓN`), y debe usar un espaciado anterior negativo de `-15pt` en `titlesec` para elevar la posición inicial de inicio de hoja.
-* **Otros Niveles:**
+* **Nivel 1 (`\chapter`):** Debe alinearse a la **izquierda**, Negrita, tamaño 12 pt (`\normalsize`), no debe contener el prefijo de palabra "Capítulo" (ej. `1. INTRODUCCIÓN`), y usa espaciado anterior calibrado en `titlesec` para garantizar inicio exacto a $2.50\text{ cm}$.
+* **Otros Niveles (todos en 12 pt / `\normalsize`):**
   - Nivel 2 (`\section`): Alineado izquierda, Negrita.
   - Nivel 3 (`\subsection`): Alineado izquierda, Negrita y Cursiva.
   - Nivel 4 (`\subsubsection`): Sangría de 1.27 cm, Negrita, tipo *run-in* terminando con punto.

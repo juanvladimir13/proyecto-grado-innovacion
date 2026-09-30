@@ -8,9 +8,9 @@ Antes de comenzar cualquier tarea de desarrollo o modificación de código, cons
 1. **Variables Centralizadas y Formato Oficial (docs/formato.md):** Toda modificación de metadatos (autor(es), título, tutor/a, institución, especialidad, modalidad), tipografía (`\tipografiadocumento{times}` para Times New Roman 12pt), márgenes (`\margenizquierdo{3.0cm}`, `\margenderecho{2.5cm}`, `\margensuperior{2.5cm}`, `\margeninferior{2.5cm}`), logotipo (`\anchologobth{6.0cm}`, `\alturalogobth{4.5cm}`), fórmula de grado (`\formulagradobth`), espaciado de párrafos (`\espacioposteriorparrafo`, `\sangriaprimeralinea`) y diagramación (`\espaciosuperiordedicatoria`) debe realizarse únicamente en `estilos/configuracion.tex`. Soporta 1 o 2 autores dinámicamente (`\autoruno{Estudiante 1}`, `\autordos{Estudiante 2}`). Los campos de C.I. fueron removidos y no forman parte de la plantilla. NUNCA hardcodear nombres o datos en los `.tex`.
 2. **Estructura Modular (Innovación Tecnológica):** El proyecto contiene 9 capítulos en el directorio `capitulos/` (`01_introduccion/` a `09_conclusiones_recomendaciones/`). Cada carpeta incluye un `main.tex` que ensambla las secciones. Rutas internas: `\input{capitulos/0X_.../...}`.
 3. **Estilo de Títulos APA 7ma Edición Adaptado:**
-   - Todos los títulos y enlaces internos en **negro** (`linkcolor=black`).
+   - Todos los títulos y enlaces internos en **negro** (`linkcolor=black`). Niveles 1 al 5 en **12 pt** (`\normalsize`).
    - Interlineado sencillo (`1.0` / `\setstretch{1.0}`) para títulos de Nivel 1 al 4.
-   - Nivel 1 (`\chapter`): Alineado a la **izquierda**, sin prefijo de palabra "Capítulo" (ej: `1. INTRODUCCIÓN`), y con espaciado anterior a `-30pt` en `titlesec` para inicio exacto a 2.5 cm.
+   - Nivel 1 (`\chapter`): Alineado a la **izquierda**, Negrita, tamaño 12 pt (`\normalsize`), sin prefijo de palabra "Capítulo" (ej: `1. INTRODUCCIÓN`), y con espaciado anterior calibrado en `titlesec` para inicio exacto a 2.50 cm.
    - Nivel 2 (`\section`): Alineado izquierda, Negrita.
    - Nivel 3 (`\subsection`): Alineado izquierda, Negrita y Cursiva.
    - Nivel 4 (`\subsubsection`): Sangría de 1.27 cm, Negrita, tipo *run-in* terminando con punto.
