@@ -43,7 +43,7 @@ Todos los archivos fuente de los capítulos se encuentran en el directorio `capi
 * **Archivo de ensamble:** `capitulos/04_desarrollo_innovacion/main.tex`
 * **Propósito:** Explicar exhaustivamente la construcción técnica de la solución.
 * **Archivos y Contenido:**
-  * `diseno.tex`: Diseño técnico del producto/servicio, arquitectura y especificaciones técnicas (`tablas/especificaciones_tecnicas_ejemplo.tex`).
+  * `diseno.tex`: Diseño del producto o servicio, arquitectura y especificaciones técnicas (`tablas/especificaciones_tecnicas_ejemplo.tex`).
   * `planificacion.tex`: Planificación y cronograma de fases de desarrollo (`tablas/cronograma_ejemplo.tex`).
   * `recursos.tex`: Recursos humanos, materiales, equipos y financieros empleados.
   * `calculo_costos.tex`: Cálculo de costos de inversión, operativos y costos totales (`tablas/costos_ejemplo.tex`).

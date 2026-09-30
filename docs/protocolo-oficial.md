@@ -60,7 +60,7 @@ En este apartado se debe incluir el conjunto de teorías, conceptos y lineamient
 ## 4. DESARROLLO DE LA INNOVACIÓN (Mínimo 5 páginas)
 En este apartado se debe redactar el cómo se va a realizar la innovación.
 
-### 4.1. Diseño de producto o servicio
+### 4.1. Diseño del producto o servicio
 Descripción del proceso seguido para diseñar el producto o servicio, desde la idea inicial hasta el producto final.
 
 Innovación y diferenciación: Cómo el producto o servicio se diferencia de los competidores y qué innovaciones aporta al mercado.

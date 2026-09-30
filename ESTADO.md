@@ -68,7 +68,7 @@
 
 | Sección | Archivo Fuente | Estado | Pendientes / Notas | Última Act. |
 | :--- | :--- | :--- | :--- | :--- |
-| **4.1 Diseño del producto/servicio** | `diseno.tex` | **Plantilla estructurada** | Contiene `especificaciones_tecnicas_ejemplo.tex` y `figura_ejemplo.tex`. Pendiente diagrama real del sistema. | 2026-09-20 |
+| **4.1 Diseño del producto o servicio** | `diseno.tex` | **Plantilla estructurada** | Contiene `especificaciones_tecnicas_ejemplo.tex` y `figura_ejemplo.tex`. Pendiente diagrama real del sistema. | 2026-09-30 |
 | **4.2 Planificación y cronograma** | `planificacion.tex` | **Plantilla estructurada** | Contiene `cronograma_ejemplo.tex`. Ajustar fechas reales de desarrollo 2026. | 2026-09-20 |
 | **4.3 Recursos** | `recursos.tex` | **Plantilla estructurada** | Detallar recursos humanos, equipamiento hardware, stack de desarrollo y servidores. | 2026-09-20 |
 | **4.4 Cálculo de costos** | `calculo_costos.tex` | **Plantilla estructurada** | Contiene `costos_ejemplo.tex`. Pendiente presupuesto real de hosting, dominio y desarrollo. | 2026-09-20 |

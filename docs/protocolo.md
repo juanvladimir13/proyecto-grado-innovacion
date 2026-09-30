@@ -159,7 +159,7 @@ Sustentación teórica, científica, tecnológica y normativa que respalda la so
 
 Constituye el núcleo técnico del trabajo; detalla con precisión ingenieril cómo se concibió, planificó y construyó la innovación.
 
-### 4.1. Diseño del Producto o Servicio Tecnológico
+### 4.1. Diseño del producto o servicio
 * Descripción del flujo de ingeniería desde la conceptualización hasta la versión operativa final.
 * **4.1.1. Especificaciones Técnicas y Características del Sistema:**
   - *Requerimientos Funcionales (RF):* Listado detallado de lo que el sistema hace (autenticación con roles, registro de postulantes, validación de C.I., asignación de cupos por carrera, emisión de comprobantes en PDF).
