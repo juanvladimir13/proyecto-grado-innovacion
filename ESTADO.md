@@ -192,7 +192,7 @@
 
 | Archivo | Propósito / Alcance | Estado / Sincronización |
 | :--- | :--- | :--- |
-| `docs/formato.md` | Especificación oficial de formato: papel Carta, Times New Roman 12pt, interlineado 1.5, márgenes (3.0 cm der / 2.5 cm otros), numeración inferior derecha y carátula. | **Sincronizado al 100%** con `configuracion.tex`, `estilos.sty`, `caratula.sty` y `main.tex`. |
+| `docs/formato.md` | Especificación oficial de formato: papel Carta, Times New Roman 12pt, interlineado 1.5, márgenes (3.0 cm izq empaste / 2.5 cm otros), numeración inferior derecha y carátula. | **Sincronizado al 100%** con `configuracion.tex`, `estilos.sty`, `caratula.sty` y `main.tex`. |
 | `docs/protocolo.md` | Guía metodológica institucional enriquecida con los 9 capítulos y sus subsecciones temáticas para Innovación Tecnológica. | **Sincronizado al 100%** con la estructura modular de `capitulos/`. |
 | `docs/ficha-proyecto.md` | Ficha técnica y requerimientos del sistema web de inscripción. | **Base de datos de requerimientos activa.** |
 | `docs/REGLAMENTO_BTH__RM_0912_2023.pdf` | Reglamento ministerial oficial de graduación BTH (Bolivia). | **Marco legal vigente.** |

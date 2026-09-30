@@ -79,10 +79,10 @@
     \especialidadportadabth{#2}%
 }
 
-% 3. Logo del BTH San Julián (Tamaño de imagen 6 cm x 4.5 cm)
+% 3. Logo del BTH San Julián (Tamaño de imagen 6 cm x 4.5 cm máximo, manteniendo proporción)
 \newcommand{\bloquelogoportada}[2][\anchologobth]{%
     \vspace{0.35cm}%
-    \par{\centering\includegraphics[width=#1,height=\alturalogobth]{#2}\par}%
+    \par{\centering\includegraphics[width=#1,height=\alturalogobth,keepaspectratio]{#2}\par}%
     \vspace{0.4cm}%
 }
 

@@ -11,7 +11,7 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
 
 1. **Variables Centralizadas y Formato Oficial (docs/formato.md):**
    - **NUNCA** quemes nombres de autores, tutores, institución, especialidad o título en archivos `.tex` (`caratula.tex` o capítulos).
-   - Toda modificación de metadatos, tipografía (`\tipografiadocumento{times}` para Times New Roman 12pt), márgenes (`\margenderecho{3.0cm}`, `\margenizquierdo{2.5cm}`, `\margensuperior{2.5cm}`, `\margeninferior{2.5cm}`), espaciado de párrafos (`\espacioposteriorparrafo`, `\sangriaprimeralinea`), diagramación (`\espaciosuperiordedicatoria`), figuras (`\anchuraimagenpredeterminada`, `\estilorotuloapa`) y portada (`\activarmarcobth`, `\rutamarcobth`, `\rutalogobth`, `\anchologobth{6.0cm}`, `\alturalogobth{4.5cm}`, `\formulagradobth`) se realiza en [estilos/configuracion.tex](estilos/configuracion.tex). Soporta 1 o 2 autores dinámicamente (`\autoruno{Estudiante 1}`, `\autordos{Estudiante 2}`).
+   - Toda modificación de metadatos, tipografía (`\tipografiadocumento{times}` para Times New Roman 12pt), márgenes (`\margenizquierdo{3.0cm}`, `\margenderecho{2.5cm}`, `\margensuperior{2.5cm}`, `\margeninferior{2.5cm}`), espaciado de párrafos (`\espacioposteriorparrafo`, `\sangriaprimeralinea`), diagramación (`\espaciosuperiordedicatoria`), figuras (`\anchuraimagenpredeterminada`, `\estilorotuloapa`) y portada (`\activarmarcobth`, `\rutamarcobth`, `\rutalogobth`, `\anchologobth{6.0cm}`, `\alturalogobth{4.5cm}`, `\formulagradobth`) se realiza en [estilos/configuracion.tex](estilos/configuracion.tex). Soporta 1 o 2 autores dinámicamente (`\autoruno{Estudiante 1}`, `\autordos{Estudiante 2}`).
    - Los campos de C.I. del estudiante fueron removidos y no forman parte de la plantilla.
 
 2. **Estructura Modular de Capítulos (Innovación Tecnológica):**
@@ -22,7 +22,7 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
 3. **Estilo de Títulos APA 7ma Edición Adaptado:**
    - Todos los títulos y enlaces internos (TOC, LOF, LOT, referencias) en **negro** (`linkcolor=black`).
    - Interlineado sencillo (`1.0` / `\setstretch{1.0}`) para títulos de Nivel 1 al 4.
-   - Nivel 1 (`\chapter`): Alineado a la **izquierda**, sin prefijo de palabra "Capítulo" (ej. `1. INTRODUCCIÓN`), con espaciado anterior a `-15pt` en `titlesec`.
+   - Nivel 1 (`\chapter`): Alineado a la **izquierda**, sin prefijo de palabra "Capítulo" (ej. `1. INTRODUCCIÓN`), con espaciado anterior a `-30pt` en `titlesec` para garantizar inicio exacto a 2.5 cm.
    - Nivel 2 (`\section`): Alineado a la izquierda, Negrita.
    - Nivel 3 (`\subsection`): Alineado a la izquierda, Negrita y Cursiva.
    - Nivel 4 (`\subsubsection`): Sangría de 1.27 cm, Negrita, tipo *run-in* terminando con punto.

@@ -28,11 +28,11 @@
 % ============================================================
 % 4. DIMENSIONES DE PÁGINA Y MÁRGENES (docs/formato.md)
 % ============================================================
-% Carta: Derecho: 3.0 cm | Izquierdo, Superior e Inferior: 2.5 cm
+% Carta: Izquierdo: 3.0 cm (empaste/anillado) | Derecho, Superior e Inferior: 2.5 cm
 \RequirePackage{geometry}
 \geometry{
     letterpaper,
-    top=\margensuperior,
+    top=\dimexpr\margensuperior-2.65pt\relax,
     bottom=\margeninferior,
     left=\margenizquierdo,
     right=\margenderecho,
@@ -85,13 +85,13 @@
 \titleformat{\chapter}[block]
   {\normalfont\Large\bfseries\setstretch{1.0}}
   {\thechapter.}{0.5em}{}
-\titlespacing*{\chapter}{0pt}{-15pt}{10pt}
+\titlespacing*{\chapter}{0pt}{-27.35pt}{10pt}
 
 % Nivel 1 sin numerar (Bibliografía, Anexos, Resumen)
 \titleformat{name=\chapter,numberless}[block]
   {\normalfont\Large\bfseries\setstretch{1.0}}
   {}{0pt}{}
-\titlespacing*{name=\chapter,numberless}{0pt}{-15pt}{20pt}
+\titlespacing*{name=\chapter,numberless}{0pt}{-27.35pt}{20pt}
 
 % Nivel 2 (\section) - Alineado a la izquierda, Negrita
 \titleformat{\section}

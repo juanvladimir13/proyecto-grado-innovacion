@@ -132,8 +132,8 @@ En todo el proyecto (capítulos, tablas, notas y anexos) se sigue de manera estr
    - Tipografía principal: **Times New Roman 12 pt** (`mathptmx`, gobernada centralmente por `\tipografiadocumento{times}`) con interlineado de 1.5 líneas (`\onehalfspacing`).
    - Tipografía para código y texto monoespaciado: Courier (`courier`).
 2. **Márgenes Oficiales:**
-   - **Margen Derecho:** 3.0 cm (`\margenderecho`).
-   - **Margen Izquierdo, Superior e Inferior:** 2.5 cm (`\margenizquierdo`, `\margensuperior`, `\margeninferior`).
+   - **Margen Izquierdo:** 3.0 cm (`\margenizquierdo`, para empastado/anillado).
+   - **Margen Derecho, Superior e Inferior:** 2.5 cm (`\margenderecho`, `\margensuperior`, `\margeninferior`).
 3. **Numeración de Página:**
    - **Posición:** Obligatoriamente en la **parte inferior derecha** (`\rfoot{\thepage}`).
    - **Páginas Preliminares:** Números romanos minúsculos (`i, ii, iii...`) desde Agradecimientos hasta Resumen.

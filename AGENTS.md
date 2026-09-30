@@ -25,7 +25,7 @@ Este archivo define la estructura, reglas y flujos de trabajo del proyecto para 
 * **Tipografía:** Times New Roman (`mathptmx`) de tamaño `12pt` en cuerpo principal (conmutable con Arial vía `\tipografiadocumento`), y Courier (`courier`) para código fuente y texto monoespaciado.
 * **Código Fuente y Programación:** Entorno `listings` con sintaxis coloreada, soporte UTF-8 (español), tipografía Courier y estilo predeterminado `estilocodigo`.
 * **Tamaño de Hoja:** Carta (`letterpaper`).
-* **Márgenes:** Derecho: 3.0 cm | Izquierdo, Superior e Inferior: 2.5 cm (centralizados en `estilos/configuracion.tex`).
+* **Márgenes:** Izquierdo: 3.0 cm (empaste/anillado) | Derecho, Superior e Inferior: 2.5 cm (centralizados en `estilos/configuracion.tex`).
 * **Interlineado:** 1.5 líneas (`\onehalfspacing`) en párrafos.
 * **Numeración de Página:** En la parte inferior derecha (`\rfoot{\thepage}`); números romanos en preliminares y arábigos a partir de la Introducción.
 * **Espaciado entre Párrafos (Estilo Microsoft Word):** Espaciado posterior configurable (`\espacioposteriorparrafo`, por defecto `8pt`) y sangría de primera línea (`\sangriaprimeralinea`, por defecto `0pt`) centralizados en `estilos/configuracion.tex` y aplicados con el paquete `parskip`.
