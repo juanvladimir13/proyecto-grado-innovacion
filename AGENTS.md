@@ -132,6 +132,8 @@ proyecto-grado-innovacion/
 │       └── 14_revision_humanizacion_redaccion.md # Naturalización y humanización de redacción
 └── docs/                                   # Regulaciones oficiales y guías
     ├── REGLAMENTO_BTH__RM_0912_2023.pdf    # Reglamento Ministerial oficial RM 0912/2023
+    ├── formato.md                          # Especificaciones oficiales de formato de página, tipografía Times New Roman 12pt, márgenes y carátula BTH
+    ├── protocolo.md                        # Guía metodológica enriquecida y sincronizada con los 9 capítulos de Innovación Tecnológica
     ├── ficha-proyecto.md                   # Ficha de datos y requerimientos del proyecto
     ├── proyecto.md                         # Documento base de texto/notas brutas del proyecto real
     └── proyecto.rtf                        # Documento base en formato RTF del proyecto real

@@ -85,6 +85,8 @@ proyecto-grado-innovacion/
 │       └── 01_ a 14_*.md                   # Prompts de revisión modular (9 capítulos), checklist y humanización
 └── docs/                                   # Regulaciones oficiales y documentos de soporte
     ├── REGLAMENTO_BTH__RM_0912_2023.pdf    # Reglamento oficial de graduación BTH (RM 0912/2023)
+    ├── formato.md                          # Especificaciones oficiales de formato de página, tipografía Times New Roman 12pt, márgenes y carátula BTH
+    ├── protocolo.md                        # Guía metodológica enriquecida y sincronizada con los 9 capítulos de Innovación Tecnológica
     ├── ficha-proyecto.md                   # Ficha de datos y requerimientos del proyecto
     ├── proyecto.md                         # Documento base de texto/notas brutas del proyecto real
     └── proyecto.rtf                        # Documento base en formato RTF del proyecto real

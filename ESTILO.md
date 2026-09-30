@@ -122,3 +122,22 @@ En todo el proyecto (capítulos, tablas, notas y anexos) se sigue de manera estr
 4. **Secciones Finales:**
    - La lista de referencias se imprime con `\printbibliography[heading=bibintoc, title={Bibliografía}]`.
    - Tanto la Bibliografía como los Anexos deben estar limpios de cabeceras y numeración de página mediante la macro global `\configurarseccionfinal`.
+
+---
+
+## 📐 9. Tipografía, Márgenes y Formato de Documento (docs/formato.md)
+
+1. **Tamaño de Hoja y Tipografía:**
+   - Papel: Carta (`letterpaper`, 21.59 cm $\times$ 27.94 cm).
+   - Tipografía principal: **Times New Roman 12 pt** (`mathptmx`, gobernada centralmente por `\tipografiadocumento{times}`) con interlineado de 1.5 líneas (`\onehalfspacing`).
+   - Tipografía para código y texto monoespaciado: Courier (`courier`).
+2. **Márgenes Oficiales:**
+   - **Margen Derecho:** 3.0 cm (`\margenderecho`).
+   - **Margen Izquierdo, Superior e Inferior:** 2.5 cm (`\margenizquierdo`, `\margensuperior`, `\margeninferior`).
+3. **Numeración de Página:**
+   - **Posición:** Obligatoriamente en la **parte inferior derecha** (`\rfoot{\thepage}`).
+   - **Páginas Preliminares:** Números romanos minúsculos (`i, ii, iii...`) desde Agradecimientos hasta Resumen.
+   - **Cuerpo Principal (Capítulos 1 al 9):** Números arábigos (`1, 2, 3...`) iniciando en la página 1 de la Introducción.
+   - **Secciones Finales (Bibliografía y Anexos):** Totalmente limpias de número de página mediante `\configurarseccionfinal`.
+4. **Espaciado de Párrafos (Estilo Bloque):**
+   - Espaciado posterior configurable (`\espacioposteriorparrafo`, 8 pt) y sangría de primera línea en 0 pt (`\sangriaprimeralinea`).

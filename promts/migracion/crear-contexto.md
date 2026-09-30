@@ -31,7 +31,7 @@ Actúa como especialista en ingeniería de prompts, documentación técnica y es
   - [Objetivo específico 4: Pruebas piloto y validación funcional/económica]
 - **Tema / Dominio Técnico:** [ej. Internet de las Cosas (IoT), automatización, desarrollo de software, robótica, agroindustria]
 - **Estilo de Citación y Bibliografía:** `biblatex` con estilo `apa` (APA 7ma Edición), backend `biber` y paquete `csquotes`
-- **Tipografía y Formato:** Arial 11pt (`helvet`), interlineado 1.5 (`\onehalfspacing`), espaciado entre párrafos 8pt (`parskip`), Courier (`courier`) para código, papel Carta (`letterpaper`), márgenes (Izquierdo: 3.0 cm, Superior/Inferior/Derecho: 2.5 cm)
+- **Tipografía y Formato:** Times New Roman 12pt (`mathptmx`), interlineado 1.5 (`\onehalfspacing`), espaciado entre párrafos 8pt (`parskip`), Courier (`courier`) para código, papel Carta (`letterpaper`), márgenes (Derecho: 3.0 cm, Izquierdo/Superior/Inferior: 2.5 cm), numeración en la parte inferior derecha (`\rfoot{\thepage}`).
 - **Motor y Script de Compilación:** `./compilar.sh` (`pdflatex` + `biber`), con opciones `--fast`, `--clean`, `--only-clean`, `--check-tablas`
 
 ---
@@ -115,7 +115,7 @@ Genera o actualiza en la raíz del proyecto los siguientes 5 archivos Markdown:
 ### 1. `AGENTS.md` (en la raíz)
 Debe definir con rigor las directrices para cualquier agente de IA:
 - **Resumen del Proyecto:** Nombre, objetivo, marco normativo (BTH RM 0912/2023) y modalidad de Innovación Tecnológica en 9 capítulos.
-- **Stack y Formato:** LaTeX `report`, `biblatex-apa` (Biber), Arial 11pt, interlineado 1.5, espaciado de párrafos 8pt (`parskip`), márgenes carta (3.0 cm izq / 2.5 cm otros).
+- **Stack y Formato:** LaTeX `report` (12pt), `biblatex-apa` (Biber), Times New Roman 12pt, interlineado 1.5, espaciado de párrafos 8pt (`parskip`), márgenes carta (3.0 cm der / 2.5 cm otros), numeración en la parte inferior derecha.
 - **Estructura de Directorios:** Árbol completo del repositorio explicando el propósito de cada carpeta y archivo modular.
 - **Reglas Críticas de la IA:**
   1. *Parametrización:* Prohibido hardcodear datos personales o institucionales en archivos `.tex`; centralizarlos en `estilos/configuracion.tex`.

@@ -45,11 +45,11 @@ Actúa como el **presidente de tribunal de titulación del Bachillerato Técnico
 ### Contexto del documento
 - Modalidad: Proyecto de Grado — Innovación Tecnológica (BTH Bolivia)
 - Compilación oficial: Ejecutado mediante `./compilar.sh --clean` (generación de `main.pdf`)
-- Formato tipográfico y márgenes:
-  * Papel carta (`letterpaper`), Arial 11pt, interlineado 1.5 en texto principal.
-  * Margen izquierdo: 3.0 cm | Márgenes superior, inferior y derecho: 2.5 cm.
+- Formato tipográfico y márgenes (docs/formato.md):
+  * Papel carta (`letterpaper`), Times New Roman 12pt (`mathptmx`), interlineado 1.5 en texto principal.
+  * Margen derecho: 3.0 cm | Márgenes superior, inferior e izquierdo: 2.5 cm.
   * Silabación/guionado desactivado globalmente.
-  * Sin encabezados de página (`headrulewidth=0pt`), números de página centrados al pie.
+  * Sin encabezados de página (`headrulewidth=0pt`), números de página en la parte inferior derecha (`\rfoot{\thepage}`).
 
 ### Checklist Oficial a Verificar
 

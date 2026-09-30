@@ -1,7 +1,7 @@
 # 📊 Matriz de Estado y Control del Proyecto — Innovación Tecnológica
 
 > **Propósito:** Este documento registra y sincroniza el estado de completitud, nivel de avance y elementos pendientes de cada archivo y componente del proyecto de grado en LaTeX. Sirve como referencia centralizada para agentes de IA y desarrolladores.
-> **Última Actualización General:** 2026-09-20
+> **Última Actualización General:** 2026-09-30
 
 ---
 
@@ -11,11 +11,11 @@
 - **Modalidad:** Innovación Tecnológica (9 Capítulos, BTH RM 0912/2023)
 - **Especialidad:** Sistemas Informáticos (Técnico Medio)
 - **Institución:** Módulo Tecnológico Productivo San Julián
-- **Distrito / Departamento:** Distrito Educativo San Julián | Santa Cruz -- Bolivia
+- **Distrito / Departamento:** Distrito Educativo San Julián | Santa Cruz - Bolivia
 - **Autores:** Estudiante 1 y Estudiante 2
 - **Tutor Guía:** Ing. Juan Vladimir Ramirez Flores
 - **Gestión Académica:** 2026
-- **Estado Global:** **Plantilla Modular Estructurada y Compilable** (100% compila sin errores, estructura base validada, tablas conformes con APA 7, pendiente de redacción temática y datos empíricos de campo).
+- **Estado Global:** **Plantilla Modular Estructurada y Compilable** (100% compila sin errores, estructura base validada, tablas conformes con APA 7, formato general sincronizado con `docs/formato.md` y `docs/protocolo.md`, pendiente de redacción temática y datos empíricos de campo).
 
 ---
 
@@ -23,7 +23,7 @@
 
 | Sección / Elemento | Archivo Fuente | Estado | Pendientes / Notas | Última Act. |
 | :--- | :--- | :--- | :--- | :--- |
-| **Carátula Oficial BTH** | `preliminares/caratula.tex` | **Completo** | Parametrizada vía `estilos/configuracion.tex` y `estilos/caratula.sty` con marco azul. | 2026-09-20 |
+| **Carátula Oficial BTH** | `preliminares/caratula.tex` | **Completo** | Parametrizada vía `estilos/configuracion.tex` y `estilos/caratula.sty` según `docs/formato.md` (Times New Roman 14/12pt, logo 6x4.5cm, marco azul). | 2026-09-30 |
 | **Agradecimientos** | `preliminares/agradecimiento.tex` | **Plantilla estructurada** | Requiere texto definitivo y dedicatorias de las autoras. | 2026-09-20 |
 | **Dedicatoria** | `preliminares/dedicatoria.tex` | **Plantilla estructurada** | Requiere texto formal de dedicatoria de las autoras. | 2026-09-20 |
 | **Resumen en Castellano** | `preliminares/resumen.tex` | **Plantilla estructurada** | Requiere síntesis factual (problema, solución, resultados) y palabras clave definitivas. | 2026-09-20 |
@@ -71,7 +71,7 @@
 | **4.1 Diseño del producto o servicio** | `diseno.tex` | **Plantilla estructurada** | Contiene `especificaciones_tecnicas_ejemplo.tex` y `figura_ejemplo.tex`. Pendiente diagrama real del sistema. | 2026-09-30 |
 | **4.2 Planificación y cronograma** | `planificacion.tex` | **Plantilla estructurada** | Contiene `cronograma_ejemplo.tex`. Ajustar fechas reales de desarrollo 2026. | 2026-09-20 |
 | **4.3 Recursos** | `recursos.tex` | **Plantilla estructurada** | Detallar recursos humanos, equipamiento hardware, stack de desarrollo y servidores. | 2026-09-20 |
-| **4.4 Cálculo de costos** | `calculo_costos.tex` | **Plantilla estructurada** | Contiene `costos_ejemplo.tex`. Pendiente presupuesto real de hosting, dominio y desarrollo. | 2026-09-20 |
+| **4.4 Cálculo de costos** | `calculo_costos.tex` | **Plantilla estructurada** | Contiene `costos_ejemplo.tex`. Subtítulos de Costos de inversión y operación en plural. | 2026-09-30 |
 
 ### Capítulo 5: Metodología (`capitulos/05_metodologia/`)
 * **Archivo de ensamble:** `capitulos/05_metodologia/main.tex` (**Completo**)
@@ -185,3 +185,14 @@
 
 - **Migración y recopilación (`promts/migracion/`):** 3 prompts (`crear-contexto.md`, `ficha-proyecto.md`, `copiar-documento.md`).
 - **Revisión temática y calidad (`promts/revicion/`):** 17 prompts (`00_README_flujo_revision.md`, `00_analisis-capitulos-tesis.md`, `01` a `14_revision_humanizacion_redaccion.md`).
+
+---
+
+## 📄 9. Documentación y Guías Base (`docs/`)
+
+| Archivo | Propósito / Alcance | Estado / Sincronización |
+| :--- | :--- | :--- |
+| `docs/formato.md` | Especificación oficial de formato: papel Carta, Times New Roman 12pt, interlineado 1.5, márgenes (3.0 cm der / 2.5 cm otros), numeración inferior derecha y carátula. | **Sincronizado al 100%** con `configuracion.tex`, `estilos.sty`, `caratula.sty` y `main.tex`. |
+| `docs/protocolo.md` | Guía metodológica institucional enriquecida con los 9 capítulos y sus subsecciones temáticas para Innovación Tecnológica. | **Sincronizado al 100%** con la estructura modular de `capitulos/`. |
+| `docs/ficha-proyecto.md` | Ficha técnica y requerimientos del sistema web de inscripción. | **Base de datos de requerimientos activa.** |
+| `docs/REGLAMENTO_BTH__RM_0912_2023.pdf` | Reglamento ministerial oficial de graduación BTH (Bolivia). | **Marco legal vigente.** |

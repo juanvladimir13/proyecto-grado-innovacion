@@ -9,9 +9,9 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
 
 ## 🎯 Resumen de Reglas Críticas para Antigravity
 
-1. **Variables Centralizadas:**
+1. **Variables Centralizadas y Formato Oficial (docs/formato.md):**
    - **NUNCA** quemes nombres de autores, tutores, institución, especialidad o título en archivos `.tex` (`caratula.tex` o capítulos).
-   - Toda modificación de metadatos, espaciado de párrafos (`\espacioposteriorparrafo`, `\sangriaprimeralinea`), diagramación (`\espaciosuperiordedicatoria`), figuras (`\anchuraimagenpredeterminada`, `\estilorotuloapa`) y portada (`\activarmarcobth`, `\rutamarcobth`, `\rutalogobth`, `\formulagradobth`) se realiza en [estilos/configuracion.tex](estilos/configuracion.tex). Soporta 1 o 2 autores dinámicamente (`\autoruno{Estudiante 1}`, `\autordos{Estudiante 2}`).
+   - Toda modificación de metadatos, tipografía (`\tipografiadocumento{times}` para Times New Roman 12pt), márgenes (`\margenderecho{3.0cm}`, `\margenizquierdo{2.5cm}`, `\margensuperior{2.5cm}`, `\margeninferior{2.5cm}`), espaciado de párrafos (`\espacioposteriorparrafo`, `\sangriaprimeralinea`), diagramación (`\espaciosuperiordedicatoria`), figuras (`\anchuraimagenpredeterminada`, `\estilorotuloapa`) y portada (`\activarmarcobth`, `\rutamarcobth`, `\rutalogobth`, `\anchologobth{6.0cm}`, `\alturalogobth{4.5cm}`, `\formulagradobth`) se realiza en [estilos/configuracion.tex](estilos/configuracion.tex). Soporta 1 o 2 autores dinámicamente (`\autoruno{Estudiante 1}`, `\autordos{Estudiante 2}`).
    - Los campos de C.I. del estudiante fueron removidos y no forman parte de la plantilla.
 
 2. **Estructura Modular de Capítulos (Innovación Tecnológica):**
@@ -28,10 +28,10 @@ Este proyecto de LaTeX modular sigue pautas estrictas para mantener la consisten
    - Nivel 4 (`\subsubsection`): Sangría de 1.27 cm, Negrita, tipo *run-in* terminando con punto.
    - Nivel 5 (`\paragraph`): Sangría de 1.27 cm, Negrita y Cursiva, tipo *run-in* terminando con punto.
 
-4. **Encabezados y Pies de Página:**
+4. **Encabezados y Pies de Página (docs/formato.md):**
    - Encabezados deshabilitados (`headrulewidth=0pt`, sin texto superior).
-   - Pies de página: numeración arábiga centrada abajo (`\cfoot{\thepage}`) en Capítulos 1 al 9.
-   - Páginas preliminares en números romanos (`\pagenumbering{roman}`).
+   - Pies de página: numeración arábiga en la parte inferior derecha (`\rfoot{\thepage}`) en Capítulos 1 al 9.
+   - Páginas preliminares en números romanos en la parte inferior derecha (`\pagenumbering{roman}`).
    - Bibliografía y Anexos: no numerados (`numberless`) y limpios de numeración de página y cabeceras mediante `\configurarseccionfinal`.
 
 5. **Bibliografía (BibLaTeX + Biber):**
